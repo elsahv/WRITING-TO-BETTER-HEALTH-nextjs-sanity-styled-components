@@ -1,10 +1,31 @@
-import { Grid, Left, Middle, Right } from "../../styles/ThreeCol.styled";
+import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
+import styled from "styled-components";
 
-export default function HomeHero() {
+const Banner = styled.div`
+  display: flex;
+  justify-content: center;
+  background: teal;
+  width: 100%;
+  height: 50px;
+`;
+
+const BottomCTA = styled.div`
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  background: teal;
+  width: 100%;
+  height: 50px;
+  button {
+  }
+`;
+
+export default function DevDesignProcess() {
   return (
-    <>
-      banner
-      <Grid>
+    <div>
+      {/* //todo END SECTION 3 */}
+      <Banner>Banner</Banner>
+      <ThreeCol>
         <Left>
           <h4>Contact</h4>
           img
@@ -35,7 +56,14 @@ export default function HomeHero() {
             consectetur? Illum, soluta?
           </p>
         </Right>
-      </Grid>
-    </>
+      </ThreeCol>
+      <>
+        <BottomCTA>
+          <h2>Lets gets started</h2>
+          <button>Lets go!</button>
+        </BottomCTA>
+      </>
+      {/* //todo END SECTION 3 */}
+    </div>
   );
 }

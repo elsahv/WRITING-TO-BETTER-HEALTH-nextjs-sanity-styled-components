@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
+export const ThreeCol = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "left middle right";
+  grid-gap: 1em;
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
@@ -16,7 +17,7 @@ export const Grid = styled.div`
 
 export const Left = styled.div`
   grid-area: left;
-  background: green;
+  // background: green;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -25,7 +26,7 @@ export const Left = styled.div`
 
 export const Middle = styled.div`
   grid-area: middle;
-  background: pink;
+  // background: pink;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -33,7 +34,7 @@ export const Middle = styled.div`
 `;
 export const Right = styled.div`
   grid-area: right;
-  background: orange;
+  // background: orange;
   // display: flex;
   // justify-content: center;
   // align-items: center;

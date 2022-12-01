@@ -1,4 +1,4 @@
-// import GlobalStyles from "./Global.js";
+import GlobalStyles from "./styles/Global.js";
 import Footer from "./Footer";
 import Header from "./Header";
 // import Sidebar from "./Sidebar.js";
@@ -7,7 +7,7 @@ import Header from "./Header";
 export default function Layout({ children }) {
   return (
     <>
-      {/* <GlobalStyles /> */}
+      <GlobalStyles />
       {/* <Sidebar /> */}
       <Header />
       <main>{children}</main>

@@ -1,11 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import HomeHero from "../components/sections/homePage/HomeHero";
-import ThreeColGrid from "../components/sections/homePage/ThreeColGrid";
-import PainPoints from "../components/sections/homePage/PainPoints";
-import SellingPoints from "../components/sections/homePage/SellingPoints";
-import DevDesignProcess from "../components/sections/homePage/DevDesignProcess";
-import EmailCta from "../components/sections/homePage/EmailCta";
+import Hero from "../components/sections/homepage/Hero";
+import ThreeColumnSection from "../components/sections/homepage/ThreeColSection";
+import SellingPoints from "../components/sections/homepage/SellingPoints";
+import DevDesignProcess from "../components/sections/homepage/DevDesignProcess";
+
+//* STYLES
+
+//* END STYLES
 
 export default function Home() {
   return (
@@ -16,12 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <HomeHero />
-        <ThreeColGrid />
-        <PainPoints />
+        <Hero />
+        <ThreeColumnSection />
         <SellingPoints />
         <DevDesignProcess />
-        <EmailCta />
       </>
     </div>
   );

@@ -11,10 +11,10 @@ export default function Header() {
             <Link href="/" id="logo">
               Writing to Better Health
             </Link>
-            <Link href="/web-development" class="nav-link">
+            <Link href="/web-development" className="nav-link">
               Web Development
             </Link>
-            <Link href="/blog" class="nav-link">
+            <Link href="/blog" className="nav-link">
               Blog
             </Link>
           </Navlinks>

@@ -15,7 +15,7 @@ export const Grid = styled.div`
 
 export const LeftSide = styled.div`
   grid-area: leftSide;
-  background: teal;
+  // background: teal;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -23,7 +23,7 @@ export const LeftSide = styled.div`
 `;
 export const RightSide = styled.div`
   grid-area: rightSide;
-  background: coral;
+  // background: coral;
   // display: flex;
   // justify-content: center;
   // align-items: center;

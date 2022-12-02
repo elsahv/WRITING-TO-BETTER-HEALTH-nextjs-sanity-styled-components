@@ -7,11 +7,20 @@ import styled from "styled-components";
 const Banner = styled.div`
   text-align: left;
   color: #000;
-  padding: 100px 20px;
+  padding: 100px 150px;
+  // background: coral;
+`;
+
+const BlogPageTitle = styled.h2`
+  font-weight: bold;
+  font-size: 35px;
+  color: teal;
+  text-shadow: 1px 1px 1px #000;
 `;
 
 export const PostsWrapper = styled.div`
   // background: orange;
+  padding: 0 50px;
   border-top: solid 1px black;
 
   @media only screen and (max-width: 600px) {
@@ -21,7 +30,22 @@ export const PostsWrapper = styled.div`
 `;
 
 export const CategoryBanner = styled.div`
-  text-align: center;
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  li {
+    margin: 0 20px;
+    list-style: none;
+    background: teal;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border: solid 1px #000;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
 `;
 
 export const IndexGrid = styled.div`
@@ -99,13 +123,19 @@ export default function blog({ posts }) {
   return (
     <div>
       <Banner>
-        <h2 style={{ fontWeight: "bold", fontSize: "35px" }}>Blog</h2>
+        <BlogPageTitle>Blog</BlogPageTitle>
         <span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at,
           voluptates corporis quia a placeat asperiores ratione ducimus?
         </span>
       </Banner>
-      <CategoryBanner>Categories</CategoryBanner>
+      <CategoryBanner>
+        <ul>
+          <li>Blogging Resources</li>
+          <li>Cooking Notes</li>
+          <li>Nutritional Biochemsitry</li>
+        </ul>
+      </CategoryBanner>
 
       <IndexGrid>
         <PostsWrapper>

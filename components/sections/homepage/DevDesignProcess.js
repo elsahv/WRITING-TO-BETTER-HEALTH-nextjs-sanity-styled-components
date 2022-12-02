@@ -1,4 +1,6 @@
 import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
+import { GrContact, GrPersonalComputer } from "react-icons/gr";
+import { MdOutlineContactSupport } from "react-icons/md";
 import styled from "styled-components";
 
 const Banner = styled.div`
@@ -14,21 +16,20 @@ const Banner = styled.div`
 `;
 
 const BottomCTA = styled.div`
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
-  background: teal;
-  color: aquamarine;
-  text-shadow: 1px 1px 1px #000;
+  background-image: url("/images/sketch3.jpg");
+  // background-repeat: no-repeat;
+  border-top: solid 1px #000;
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
   width: 100%;
-  padding: 20px 0 20px 300px;
-  button {
-  }
+  padding: 60px 0 20px 300px;
+  height: 250px;
 `;
 
 const EmailCTABtn = styled.button`
   background: coral;
-  color: teal;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
   border: solid 1px #000;
   padding: 10px 15px;
   margin-top: 30px;
@@ -42,14 +43,26 @@ const EmailCTABtn = styled.button`
   }
 `;
 
+const Title = styled.h4`
+  font-size: 30px;
+`;
+
+const IconWrapper = styled.div`
+  font-size: 65px;
+`;
 export default function DevDesignProcess() {
   return (
     <div>
       <Banner>Development/ Design Process</Banner>
-      <ThreeCol style={{ padding: "40px 160px", textAlign: "center" }}>
+      <ThreeCol
+        style={{ padding: "40px 160px", textAlign: "center", margin: "30px 0" }}
+      >
         <Left>
-          <h4>Contact</h4>
-          img
+          <Title>Contact</Title>
+          <IconWrapper>
+            <GrContact />
+          </IconWrapper>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero
             quaerat rerum soluta hic? Doloremque, aperiam. Totam reprehenderit
@@ -58,8 +71,11 @@ export default function DevDesignProcess() {
           </p>
         </Left>
         <Middle>
-          <h4>Web Design</h4>
-          img
+          <Title>Web Design</Title>
+          <IconWrapper>
+            <GrPersonalComputer />
+          </IconWrapper>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero
             quaerat rerum soluta hic? Doloremque, aperiam. Totam reprehenderit
@@ -68,8 +84,11 @@ export default function DevDesignProcess() {
           </p>
         </Middle>
         <Right>
-          <h4>Service & Support</h4>
-          img
+          <Title>Service & Support</Title>
+          <IconWrapper>
+            <MdOutlineContactSupport />
+          </IconWrapper>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero
             quaerat rerum soluta hic? Doloremque, aperiam. Totam reprehenderit
@@ -80,7 +99,7 @@ export default function DevDesignProcess() {
       </ThreeCol>
       <>
         <BottomCTA>
-          <h2 style={{ fontSize: "35px" }}>Lets gets started</h2>
+          <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>
           <EmailCTABtn>Lets go!</EmailCTABtn>
         </BottomCTA>
       </>

@@ -29,7 +29,7 @@ export default function SellingPoints() {
             alt="about-me"
             // layout="responsive"
             className="img"
-            style={{ width: "100%", height: "700px" }}
+            style={{ width: "650px", height: "600px", paddingTop: "70px" }}
           />
         </LeftSide>
         <RightSide>
@@ -44,7 +44,7 @@ export default function SellingPoints() {
           </PainPts>
         </RightSide>
       </Grid>
-      <Grid>
+      <Grid style={{ padding: "40px 0" }}>
         <LeftSide>
           <SellingPts>
             <h2>How I can help</h2>
@@ -76,7 +76,7 @@ export default function SellingPoints() {
             alt="about-me"
             // layout="responsive"
             className="img"
-            style={{ width: "100%", height: "700px" }}
+            style={{ width: "650px", height: "600px", padding: "40px 0" }}
           />
         </RightSide>
       </Grid>

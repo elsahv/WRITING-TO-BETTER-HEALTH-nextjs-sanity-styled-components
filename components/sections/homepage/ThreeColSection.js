@@ -1,5 +1,6 @@
 import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
-import { FaBeer } from "react-icons/fa";
+import { RiPlantLine } from "react-icons/ri";
+import { FcSmartphoneTablet, FcComboChart } from "react-icons/fc";
 import styled from "styled-components";
 
 const Sq = styled.div`
@@ -14,13 +15,18 @@ const Sq = styled.div`
     padding: 0 25px;
   }
 `;
+const IconWrapper = styled.div`
+  font-size: 45px;
+`;
 export default function ThreeColumnSection() {
   return (
     <div>
       <ThreeCol style={{ margin: "20px" }}>
         <Left>
           <Sq style={{ background: "teal" }}>
-            <FaBeer />
+            <IconWrapper>
+              <FcSmartphoneTablet />
+            </IconWrapper>
             <h4>Mobile Friendly</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
@@ -31,8 +37,10 @@ export default function ThreeColumnSection() {
           </Sq>
         </Left>
         <Middle>
-          <Sq style={{ background: "coral" }}>
-            <FaBeer />
+          <Sq style={{ background: "orange" }}>
+            <IconWrapper>
+              <FcComboChart />
+            </IconWrapper>
             <h4>SEO</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
@@ -43,8 +51,11 @@ export default function ThreeColumnSection() {
           </Sq>
         </Middle>
         <Right>
-          <Sq style={{ background: "orange" }}>
-            <FaBeer />
+          <Sq style={{ background: "coral" }}>
+            <IconWrapper>
+              <RiPlantLine />
+            </IconWrapper>
+
             <h4>Promise</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt

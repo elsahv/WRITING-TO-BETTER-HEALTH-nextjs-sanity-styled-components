@@ -16,16 +16,16 @@ export const Grid = styled.div`
 export const LeftSide = styled.div`
   grid-area: leftSide;
   // background: teal;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   // align-items: center;
   // flex-direction: column;
 `;
 export const RightSide = styled.div`
   grid-area: rightSide;
   // background: coral;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   // align-items: center;
-  // flex-direction: column;
+  flex-direction: column;
 `;

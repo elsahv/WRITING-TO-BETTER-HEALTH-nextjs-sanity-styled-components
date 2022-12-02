@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
+import { ContactBtn } from "../../styles/Button.styled";
 import img1 from "../../../public/images/sketch2.jpg";
 import styled from "styled-components";
 
@@ -10,22 +11,6 @@ const HeroContent = styled.div`
   li {
     padding-top: 5px;
     padding-left: 10px;
-  }
-`;
-
-const EmailCTABtn = styled.button`
-  background: teal;
-  color: aquamarine;
-  border: solid 1px #000;
-  padding: 10px 15px;
-  margin-top: 30px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 25px;
-  &:hover {
-    color: teal;
-    background: aquamarine;
-    transition: 1s;
   }
 `;
 
@@ -45,7 +30,15 @@ export default function Hero() {
               <li>nutrition education</li>
               <li>make your business more profitable</li>
             </ul>
-            <EmailCTABtn>Ready to get started? Lets goooo!</EmailCTABtn>
+            <ContactBtn
+              style={{
+                marginTop: "10px",
+                background: "teal",
+                color: "aquamarine",
+              }}
+            >
+              Ready to get started? Lets goooo!
+            </ContactBtn>
           </HeroContent>
         </LeftSide>
         <RightSide

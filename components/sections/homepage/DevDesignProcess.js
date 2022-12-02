@@ -1,4 +1,5 @@
 import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
+import { ContactBtn } from "../../styles/Button.styled";
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import styled from "styled-components";
@@ -24,23 +25,6 @@ const BottomCTA = styled.div`
   width: 100%;
   padding: 60px 0 20px 300px;
   height: 250px;
-`;
-
-const EmailCTABtn = styled.button`
-  background: coral;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border: solid 1px #000;
-  padding: 10px 15px;
-  margin-top: 30px;
-  cursor: pointer;
-  font-size: 18px;
-  // border-radius: 25px;
-  &:hover {
-    color: teal;
-    background: aquamarine;
-    transition: 1s;
-  }
 `;
 
 const Title = styled.h4`
@@ -100,7 +84,7 @@ export default function DevDesignProcess() {
       <>
         <BottomCTA>
           <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>
-          <EmailCTABtn>Lets go!</EmailCTABtn>
+          <ContactBtn style={{ background: "coral" }}>Lets go!</ContactBtn>
         </BottomCTA>
       </>
     </div>

@@ -5,8 +5,12 @@ const Banner = styled.div`
   display: flex;
   justify-content: center;
   background: teal;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
   width: 100%;
-  height: 50px;
+  // height: 50px;
+  padding: 20px 0;
+  font-size: 20px;
 `;
 
 const BottomCTA = styled.div`
@@ -14,18 +18,35 @@ const BottomCTA = styled.div`
   // justify-content: center;
   // flex-direction: column;
   background: teal;
+  color: aquamarine;
+  text-shadow: 1px 1px 1px #000;
   width: 100%;
-  height: 50px;
+  padding: 20px 0 20px 300px;
   button {
+  }
+`;
+
+const EmailCTABtn = styled.button`
+  background: coral;
+  color: teal;
+  border: solid 1px #000;
+  padding: 10px 15px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  // border-radius: 25px;
+  &:hover {
+    color: teal;
+    background: aquamarine;
+    transition: 1s;
   }
 `;
 
 export default function DevDesignProcess() {
   return (
     <div>
-      {/* //todo END SECTION 3 */}
-      <Banner>Banner</Banner>
-      <ThreeCol>
+      <Banner>Development/ Design Process</Banner>
+      <ThreeCol style={{ padding: "40px 160px", textAlign: "center" }}>
         <Left>
           <h4>Contact</h4>
           img
@@ -59,11 +80,10 @@ export default function DevDesignProcess() {
       </ThreeCol>
       <>
         <BottomCTA>
-          <h2>Lets gets started</h2>
-          <button>Lets go!</button>
+          <h2 style={{ fontSize: "35px" }}>Lets gets started</h2>
+          <EmailCTABtn>Lets go!</EmailCTABtn>
         </BottomCTA>
       </>
-      {/* //todo END SECTION 3 */}
     </div>
   );
 }

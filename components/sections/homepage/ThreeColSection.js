@@ -9,6 +9,7 @@ const Sq = styled.div`
   align-items: center;
   flex-direction: column;
   height: 350px;
+  // border-radius: 45px;
   p {
     padding: 0 25px;
   }
@@ -16,8 +17,6 @@ const Sq = styled.div`
 export default function ThreeColumnSection() {
   return (
     <div>
-      {/* 
-        //TODO THREE GRID */}
       <ThreeCol style={{ margin: "20px" }}>
         <Left>
           <Sq style={{ background: "teal" }}>
@@ -56,8 +55,6 @@ export default function ThreeColumnSection() {
           </Sq>
         </Right>
       </ThreeCol>
-      {/* 
-        //TODO END THREE GRID */}
     </div>
   );
 }

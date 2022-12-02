@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Hero from "../components/sections/homepage/Hero";
+import HomePageHero from "../components/sections/homepage/HomePageHero";
 import ThreeColumnSection from "../components/sections/homepage/ThreeColSection";
 import SellingPoints from "../components/sections/homepage/SellingPoints";
 import DevDesignProcess from "../components/sections/homepage/DevDesignProcess";
@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Hero />
+        <HomePageHero />
         <ThreeColumnSection />
         <SellingPoints />
         <DevDesignProcess />

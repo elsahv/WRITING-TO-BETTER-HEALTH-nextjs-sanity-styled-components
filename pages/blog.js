@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { sanityClient, urlFor } from "../client";
 import styled from "styled-components";

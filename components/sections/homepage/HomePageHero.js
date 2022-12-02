@@ -21,7 +21,7 @@ const EmailCTABtn = styled.button`
   margin-top: 30px;
   cursor: pointer;
   font-size: 18px;
-  // border-radius: 25px;
+  border-radius: 25px;
   &:hover {
     color: teal;
     background: aquamarine;

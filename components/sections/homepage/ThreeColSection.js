@@ -9,14 +9,17 @@ const Sq = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 350px;
-  // border-radius: 45px;
-  p {
-    padding: 0 25px;
-  }
+  padding: 20px 20px 50px 20px;
 `;
 const IconWrapper = styled.div`
   font-size: 45px;
+`;
+
+const Content = styled.p`
+  @media only screen and (max-width: 834px) {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
 `;
 export default function ThreeColumnSection() {
   return (
@@ -28,12 +31,12 @@ export default function ThreeColumnSection() {
               <FcSmartphoneTablet />
             </IconWrapper>
             <h4>Mobile Friendly</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
+            <Content>
+              Lorem iContentsum dolor sit amet, consectetur adipisicing elit.
+              Sunt vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
               reprehenderit explicabo officiis soluta quos, eveniet sit
               repudiandae tempora illo consectetur? Illum, soluta?
-            </p>
+            </Content>
           </Sq>
         </Left>
         <Middle>
@@ -42,12 +45,12 @@ export default function ThreeColumnSection() {
               <FcComboChart />
             </IconWrapper>
             <h4>SEO</h4>
-            <p>
+            <Content>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
               vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
               reprehenderit explicabo officiis soluta quos, eveniet sit
               repudiandae tempora illo consectetur? Illum, soluta?
-            </p>
+            </Content>
           </Sq>
         </Middle>
         <Right>
@@ -57,12 +60,12 @@ export default function ThreeColumnSection() {
             </IconWrapper>
 
             <h4>Promise</h4>
-            <p>
+            <Content>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
               vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
               reprehenderit explicabo officiis soluta quos, eveniet sit
               repudiandae tempora illo consectetur? Illum, soluta?
-            </p>
+            </Content>
           </Sq>
         </Right>
       </ThreeCol>

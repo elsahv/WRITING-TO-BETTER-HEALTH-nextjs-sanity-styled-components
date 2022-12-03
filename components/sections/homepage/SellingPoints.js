@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
-import img2 from "../../../public/images/sketch1.jpg";
+import { ImgWrapper } from "../../styles/Images.styled";
+
+import img2 from "../../../public/images/sketch2.jpg";
 import styled from "styled-components";
 
 const PainPts = styled.div`
@@ -17,6 +19,10 @@ const SellingPts = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 100px 50px 0;
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 50px;
+  }
 `;
 
 export default function SellingPoints() {
@@ -24,13 +30,14 @@ export default function SellingPoints() {
     <div>
       <Grid>
         <LeftSide>
-          <Image
-            src={img2}
-            alt="about-me"
-            // layout="responsive"
-            className="img"
-            style={{ width: "650px", height: "600px", paddingTop: "70px" }}
-          />
+          <ImgWrapper>
+            <Image
+              src={img2}
+              alt="about-me"
+              layout="responsive"
+              className="img"
+            />
+          </ImgWrapper>
         </LeftSide>
         <RightSide>
           <PainPts>
@@ -59,28 +66,20 @@ export default function SellingPoints() {
               vero quaerat rerum soluta hi soluta quos, eveniet sit repudiandae
               tempora illo consectetur? Illum, soluta?
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
-              reprehenderit explicabo officiis soluta quos, eveniet sit
-              repudiandae tempora illo consectetur? Illum, soluta?aerat rerum
-              soluta hic? Doloremque, aperiam. Totam reprehenderit explicabo
-              officiis soluta quos, eveniet sit repudiandae tempora illo
-              consectetur? Illum, soluta?
-            </p>
           </SellingPts>
         </LeftSide>
         <RightSide>
-          <Image
-            src={img2}
-            alt="about-me"
-            // layout="responsive"
-            className="img"
-            style={{ width: "650px", height: "600px", padding: "40px 0" }}
-          />
+          <ImgWrapper>
+            <Image
+              src={img2}
+              alt="about-me"
+              layout="responsive"
+              className="img"
+            />
+          </ImgWrapper>
         </RightSide>
+        \
       </Grid>
-      {/* //todo END SECTION 2 */}
     </div>
   );
 }

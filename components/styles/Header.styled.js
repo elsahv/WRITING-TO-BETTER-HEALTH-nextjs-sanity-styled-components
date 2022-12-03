@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   padding-top: 10px;
   border-bottom: solid 1px gray;
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 export const Grid = styled.div`
   display: grid;

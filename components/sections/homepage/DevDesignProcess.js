@@ -1,8 +1,23 @@
 import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
-import { ContactBtn } from "../../styles/Button.styled";
+import { ContactBtn } from "../../styles/Buttons/ContactBtn.styled";
+
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import styled from "styled-components";
+
+const DevDesignsWrapper = styled.div`
+  padding: 20px 100px;
+  margin: 30px 0;
+  @media only screen and (max-width: 1024px) {
+    padding: 0 10px;
+    p {
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 50px;
+  }
+`;
 
 const Banner = styled.div`
   display: flex;
@@ -23,64 +38,70 @@ const BottomCTA = styled.div`
   color: #fff;
   text-shadow: 3px 3px 3px #000;
   width: 100%;
-  padding: 60px 0 20px 300px;
+  // padding: 60px 0 20px 300px;
   height: 250px;
+  @media only screen and (max-width: 800px) {
+    // padding: 0;
+  }
 `;
 
 const Title = styled.h4`
   font-size: 30px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 20px;
+  }
 `;
 
 const IconWrapper = styled.div`
-  font-size: 65px;
+  font-size: 45px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
 `;
 export default function DevDesignProcess() {
   return (
     <div>
       <Banner>Development/ Design Process</Banner>
-      <ThreeCol
-        style={{ padding: "40px 160px", textAlign: "center", margin: "30px 0" }}
-      >
-        <Left>
-          <Title>Contact</Title>
-          <IconWrapper>
-            <GrContact />
-          </IconWrapper>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero
-            quaerat rerum soluta hic? Doloremque, aperiam. Totam reprehenderit
-            explicabo officiis soluta quos, eveniet sit repudiandae tempora illo
-            consectetur? Illum, soluta?
-          </p>
-        </Left>
-        <Middle>
-          <Title>Web Design</Title>
-          <IconWrapper>
-            <GrPersonalComputer />
-          </IconWrapper>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero
-            quaerat rerum soluta hic? Doloremque, aperiam. Totam reprehenderit
-            explicabo officiis soluta quos, eveniet sit repudiandae tempora illo
-            consectetur? Illum, soluta?
-          </p>
-        </Middle>
-        <Right>
-          <Title>Service & Support</Title>
-          <IconWrapper>
-            <MdOutlineContactSupport />
-          </IconWrapper>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero
-            quaerat rerum soluta hic? Doloremque, aperiam. Totam reprehenderit
-            explicabo officiis soluta quos, eveniet sit repudiandae tempora illo
-            consectetur? Illum, soluta?
-          </p>
-        </Right>
-      </ThreeCol>
+      <DevDesignsWrapper>
+        <ThreeCol>
+          <Left>
+            <Title>Contact</Title>
+            <IconWrapper>
+              <GrContact />
+            </IconWrapper>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
+              reprehenderit explicabo officiis soluta quos, eveniet sit
+              repudiandae tempora illo consectetur? Illum, soluta?
+            </p>
+          </Left>
+          <Middle>
+            <Title>Web Design</Title>
+            <IconWrapper>
+              <GrPersonalComputer />
+            </IconWrapper>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
+              reprehenderit explicabo officiis soluta quos, eveniet sit
+              repudiandae tempora illo consectetur? Illum, soluta?
+            </p>
+          </Middle>
+          <Right>
+            <Title>Service & Support</Title>
+            <IconWrapper>
+              <MdOutlineContactSupport />
+            </IconWrapper>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
+              reprehenderit explicabo officiis soluta quos, eveniet sit
+              repudiandae tempora illo consectetur? Illum, soluta?
+            </p>
+          </Right>
+        </ThreeCol>
+      </DevDesignsWrapper>
       <>
         <BottomCTA>
           <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>

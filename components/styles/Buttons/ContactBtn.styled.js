@@ -5,8 +5,14 @@ export const ContactBtn = styled.button`
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border: solid 1px #000;
-  font-size: 20px;
+  font-size: 17px;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 25px;
+  // width: 280px;
+  text-align: left;
+
+  @media only screen and (max-width: 834px) {
+    font-size: 15px;
+  }
 `;

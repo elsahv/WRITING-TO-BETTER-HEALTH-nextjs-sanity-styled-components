@@ -1,6 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { sanityClient, urlFor } from "../client";
+import { BlogPostImgWrapper } from "../components/styles/Images.styled";
+import {
+  PostCategoryBtn,
+  PostTagBtn,
+} from "../components/styles/Buttons/BlogPostBtns.styled";
+
 import styled from "styled-components";
 
 // STYLES
@@ -15,8 +21,8 @@ const Banner = styled.div`
 const BlogPageTitle = styled.h2`
   font-weight: bold;
   font-size: 35px;
-  color: teal;
-  text-shadow: 1px 1px 1px #000;
+  // color: teal;
+  // text-shadow: 1px 1px 1px #000;
 `;
 
 export const PostsWrapper = styled.div`
@@ -40,12 +46,17 @@ export const CategoryBanner = styled.div`
   li {
     margin: 0 20px;
     list-style: none;
-    background: teal;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    // background: teal;
+    color: #000;
     border: solid 1px #000;
     padding: 10px 15px;
     border-radius: 25px;
+    &:hover {
+      background: teal;
+      text-shadow: 1px 1px 1px #000;
+      transition: 1s;
+      color: #fff;
+    }
   }
 `;
 
@@ -65,20 +76,17 @@ export const IndexGrid = styled.div`
 
 export const PostTitle = styled.h2`
   padding: 10px 0px;
-  text-align: center;
+  text-align: left;
   text-transform: capitalize;
   // text-shadow: 1px 1px 1px #000;
   color: #000;
 `;
 
-export const MostRecentTitle = styled.h2`
-  padding-top: 55px;
-  text-align: center;
-  font-size: 25px;
-  text-decoration: underline;
-  color: #000;
-  // text-shadow: 1px 1px 1px #000;
+export const PostCategory = styled.div`
+  padding-bottom: 5px;
 `;
+
+export const PostTags = styled.div``;
 
 export const PostsGrid = styled.div`
   grid-area: rs;
@@ -99,22 +107,10 @@ export const PostsGrid = styled.div`
   }
 `;
 
-export const ImgWrapper = styled.div`
-  cursor: pointer;
-  .img {
-    width: 100%;
-    height: 400px;
-    border: solid 1px black;
-    &:hover {
-      opacity: 0.7;
-      transition: 2s;
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .img {
-      height: 300px;
-    }
+export const ContentExcerpt = styled.div`
+  a {
+    text-decoration: none;
+    color: #000;
   }
 `;
 
@@ -144,15 +140,30 @@ export default function blog({ posts }) {
             {posts &&
               posts.map((post, index) => (
                 <span key={index}>
-                  <PostTitle>{post.title}</PostTitle>
-                  <Link href={`post/${post.slug.current}`}>
-                    <ImgWrapper>
+                  <PostCategory>
+                    <PostCategoryBtn>Category</PostCategoryBtn>
+                  </PostCategory>
+                  <Link
+                    style={{ color: "#000", textDecoration: "none" }}
+                    href={`post/${post.slug.current}`}
+                  >
+                    <BlogPostImgWrapper>
                       <img
                         src={urlFor(post.image)}
                         alt="main pic"
                         className="img"
                       />
-                    </ImgWrapper>
+                    </BlogPostImgWrapper>
+                    <PostTitle>{post.title}</PostTitle>
+
+                    <ContentExcerpt>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Vel eaque nulla tempora o adipisci exercitationem earum,
+                      deserunt aperiam fugiat animi?
+                    </ContentExcerpt>
+                    <PostTags>
+                      <PostTagBtn>tags</PostTagBtn>
+                    </PostTags>
                   </Link>
                 </span>
               ))}

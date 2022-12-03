@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import img1 from "../../../public/images/sketch2.jpg";
-
+import { ImgWrapper } from "../../styles/Images.styled";
 import styled from "styled-components";
 
 // STYLES
@@ -11,6 +11,33 @@ const Banner = styled.div`
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   padding: 100px 0;
+  @media only screen and (max-width: 1024px) {
+    padding: 50px 0;
+  }
+`;
+
+const BannerTitle = styled.h2`
+  font-size: 35px;
+  @media only screen and (max-width: 834px) {
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 401px) {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+`;
+
+const BannerHeadline = styled.span`
+  font-size: 25px;
+  @media only screen and (max-width: 834px) {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 17px;
+  }
+  @media only screen and (max-width: 401px) {
+    padding: 10px 20px;
+  }
 `;
 
 const WhyChooseWTBH = styled.div`
@@ -27,12 +54,10 @@ export default function WebDevHero() {
   return (
     <>
       <Banner>
-        <h2 style={{ fontSize: "35px" }}>
-          What goes into a nutrition website?
-        </h2>
-        <p style={{ fontSize: "25px" }}>
+        <BannerTitle>What goes into a nutrition website?</BannerTitle>
+        <BannerHeadline>
           Pretty much everything you need to get your business online
-        </p>
+        </BannerHeadline>
       </Banner>
 
       <Grid>
@@ -48,13 +73,14 @@ export default function WebDevHero() {
           </WhyChooseWTBH>
         </LeftSide>
         <RightSide>
-          <Image
-            src={img1}
-            alt="about-me"
-            // layout="responsive"
-            className="img"
-            style={{ width: "100%", height: "700px" }}
-          />
+          <ImgWrapper>
+            <Image
+              src={img1}
+              alt="about-me"
+              layout="responsive"
+              className="img"
+            />
+          </ImgWrapper>
         </RightSide>
       </Grid>
     </>

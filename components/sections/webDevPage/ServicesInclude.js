@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
+import { ImgWrapper } from "../../styles/Images.styled";
+
 import img1 from "../../../public/images/sketch1.jpg";
 
 import styled from "styled-components";
@@ -33,13 +35,14 @@ export default function ServicesInclude() {
 
       <Grid>
         <LeftSide>
-          <Image
-            src={img1}
-            alt="about-me"
-            // layout="responsive"
-            className="img"
-            style={{ width: "70%", height: "600px" }}
-          />
+          <ImgWrapper>
+            <Image
+              src={img1}
+              alt="about-me"
+              layout="responsive"
+              className="img"
+            />
+          </ImgWrapper>
         </LeftSide>
         <RightSide>
           <h2>Keeping things fresh</h2>

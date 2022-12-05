@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import img1 from "../../../public/images/sketch2.jpg";
-import { ImgWrapper } from "../../styles/Images.styled";
+import { ImgWrapper } from "../../styles/images/SectionImages.styled";
+import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
+
 import styled from "styled-components";
 
 // STYLES
@@ -70,6 +72,17 @@ export default function WebDevHero() {
               reprehenderit explicabo officiis soluta quos, eveniet sit
               repudiandae tempora illo consectetur? Illum, soluta?
             </p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                // background: "teal",
+                width: "270px",
+              }}
+            >
+              <ContactBtn>see packages</ContactBtn>
+              <ContactBtn>Contact</ContactBtn>
+            </div>
           </WhyChooseWTBH>
         </LeftSide>
         <RightSide>

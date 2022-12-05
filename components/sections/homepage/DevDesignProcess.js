@@ -1,5 +1,5 @@
 import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
-import { ContactBtn } from "../../styles/Buttons/ContactBtn.styled";
+import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";

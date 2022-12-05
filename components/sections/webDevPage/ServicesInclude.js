@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
-import { ImgWrapper } from "../../styles/Images.styled";
-
+import { ImgWrapper } from "../../styles/images/SectionImages.styled";
 import img1 from "../../../public/images/sketch1.jpg";
-
 import styled from "styled-components";
 
 const Banner = styled.div`

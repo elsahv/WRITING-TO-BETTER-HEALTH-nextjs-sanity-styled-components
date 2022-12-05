@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
-import { ImgWrapper } from "../../styles/Images.styled";
-
-import { ContactBtn } from "../../styles/Buttons/ContactBtn.styled";
+import { ImgWrapper } from "../../styles/images/SectionImages.styled";
+import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import img1 from "../../../public/images/sketch2.jpg";
 import styled from "styled-components";
 

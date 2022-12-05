@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
-import { ImgWrapper } from "../../styles/Images.styled";
-
+import { ImgWrapper } from "../../styles/images/SectionImages.styled";
 import img2 from "../../../public/images/sketch2.jpg";
 import styled from "styled-components";
 

@@ -1,21 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { sanityClient, urlFor } from "../client";
-import { BlogPostImgWrapper } from "../components/styles/Images.styled";
+import { BlogPostImgWrapper } from "../components/styles/images/BlogPostImages.styled";
 import {
   PostCategoryBtn,
   PostTagBtn,
-} from "../components/styles/Buttons/BlogPostBtns.styled";
-
+} from "../components/styles/buttons/BlogPostBtns.styled";
 import styled from "styled-components";
 
 // STYLES
-
 const Banner = styled.div`
   text-align: left;
   color: #000;
   padding: 100px 150px;
   // background: coral;
+
+  @media only screen and (max-width: 800px) {
+    padding: 30px 50px;
+  }
 `;
 
 const BlogPageTitle = styled.h2`
@@ -51,11 +53,19 @@ export const CategoryBanner = styled.div`
     border: solid 1px #000;
     padding: 10px 15px;
     border-radius: 25px;
+    text-align: center;
     &:hover {
       background: teal;
       text-shadow: 1px 1px 1px #000;
       transition: 1s;
       color: #fff;
+    }
+  }
+  @media only screen and (max-width: 799px) {
+    li {
+      margin: 0 10px;
+      padding: 2px 8px;
+      font-size: 12px;
     }
   }
 `;
@@ -86,7 +96,9 @@ export const PostCategory = styled.div`
   padding-bottom: 5px;
 `;
 
-export const PostTags = styled.div``;
+export const PostTags = styled.div`
+  margin-bottom: 25px;
+`;
 
 export const PostsGrid = styled.div`
   grid-area: rs;
@@ -121,16 +133,16 @@ export default function blog({ posts }) {
     <div>
       <Banner>
         <BlogPageTitle>Blog</BlogPageTitle>
-        <span>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at,
           voluptates corporis quia a placeat asperiores ratione ducimus?
-        </span>
+        </p>
       </Banner>
       <CategoryBanner>
         <ul>
           <li>Blogging Resources</li>
           <li>Cooking Notes</li>
-          <li>Nutritional Biochemsitry</li>
+          <li>Nutritional Biochemistry</li>
         </ul>
       </CategoryBanner>
 

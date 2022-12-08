@@ -18,14 +18,11 @@ export const LeftSide = styled.div`
   // background: teal;
   display: flex;
   justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
+  align-items: flex-start;
 `;
 export const RightSide = styled.div`
   grid-area: rightSide;
   // background: coral;
   display: flex;
   justify-content: center;
-  // align-items: center;
-  flex-direction: column;
 `;

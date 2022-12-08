@@ -11,6 +11,7 @@ export default function Header() {
             <Link href="/" id="logo">
               Writing to Better Health
             </Link>
+            {/* SUBMENU: SERVICES INCLUDE-#servicesInclude, PKG RATES-#pkgRates */}
             <Link href="/web-development" className="nav-link">
               Web Development
             </Link>

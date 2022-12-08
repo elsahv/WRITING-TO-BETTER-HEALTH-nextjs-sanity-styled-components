@@ -1,22 +1,12 @@
 import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import img1 from "../../../public/images/sketch2.jpg";
-import { ImgWrapper } from "../../styles/images/SectionImages.styled";
+import { SmImgWrapper } from "../../styles/images/SectionImages.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
-
 import styled from "styled-components";
+import content from "./data/webDevHero";
 
 // STYLES
-const Banner = styled.div`
-  text-align: center;
-  background: teal;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  padding: 100px 0;
-  @media only screen and (max-width: 1024px) {
-    padding: 50px 0;
-  }
-`;
 
 const BannerTitle = styled.h2`
   font-size: 35px;
@@ -29,71 +19,48 @@ const BannerTitle = styled.h2`
   }
 `;
 
-const BannerHeadline = styled.span`
-  font-size: 25px;
-  @media only screen and (max-width: 834px) {
-    font-size: 20px;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 17px;
-  }
-  @media only screen and (max-width: 401px) {
-    padding: 10px 20px;
-  }
-`;
-
-const WhyChooseWTBH = styled.div`
+const ContactBtnsWrapper = styled.div`
+  // background: green;
+  margin-top: 20px;
+  width: 260px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 100px 50px 0;
+  justify-content: space-between;
 `;
 
 //END STYLES
 
-export default function WebDevHero() {
+export default function WebDevHero({ title, headline, p1, p2 }) {
   return (
     <>
-      <Banner>
-        <BannerTitle>What goes into a nutrition website?</BannerTitle>
-        <BannerHeadline>
-          Pretty much everything you need to get your business online
-        </BannerHeadline>
-      </Banner>
-
       <Grid>
         <LeftSide>
-          <WhyChooseWTBH>
-            <h2>With you from beginning to end</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
-              reprehenderit explicabo officiis soluta quos, eveniet sit
-              repudiandae tempora illo consectetur? Illum, soluta?
-            </p>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                // background: "teal",
-                width: "270px",
-              }}
-            >
-              <ContactBtn>see packages</ContactBtn>
+          <div style={{ padding: "100px 150px" }}>
+            {content.map((item, index) => (
+              <div key={item} item={item}>
+                <BannerTitle>{item.title}</BannerTitle>
+                <div>{item.title}</div>
+                <p>{item.p1}</p>
+                <p>{item.p2}</p>
+              </div>
+            ))}
+
+            <ContactBtnsWrapper>
+              <ContactBtn>See packages</ContactBtn>
               <ContactBtn>Contact</ContactBtn>
-            </div>
-          </WhyChooseWTBH>
+            </ContactBtnsWrapper>
+          </div>
         </LeftSide>
         <RightSide>
-          <ImgWrapper>
+          <SmImgWrapper>
             <Image
               src={img1}
               alt="about-me"
               layout="responsive"
               className="img"
+              // height="100px"
+              // width="200px"
             />
-          </ImgWrapper>
+          </SmImgWrapper>
         </RightSide>
       </Grid>
     </>

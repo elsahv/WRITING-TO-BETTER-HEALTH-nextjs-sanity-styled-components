@@ -1,9 +1,9 @@
 import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
-
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import styled from "styled-components";
+import content from "./data/devdesign";
 
 const DevDesignsWrapper = styled.div`
   padding: 20px 100px;
@@ -60,54 +60,34 @@ const IconWrapper = styled.div`
 `;
 export default function DevDesignProcess() {
   return (
-    <div>
+    <>
       <Banner>Development/ Design Process</Banner>
       <DevDesignsWrapper>
         <ThreeCol>
-          <Left>
-            <Title>Contact</Title>
-            <IconWrapper>
-              <GrContact />
-            </IconWrapper>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
-              reprehenderit explicabo officiis soluta quos, eveniet sit
-              repudiandae tempora illo consectetur? Illum, soluta?
-            </p>
-          </Left>
-          <Middle>
-            <Title>Web Design</Title>
-            <IconWrapper>
-              <GrPersonalComputer />
-            </IconWrapper>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
-              reprehenderit explicabo officiis soluta quos, eveniet sit
-              repudiandae tempora illo consectetur? Illum, soluta?
-            </p>
-          </Middle>
-          <Right>
-            <Title>Service & Support</Title>
-            <IconWrapper>
-              <MdOutlineContactSupport />
-            </IconWrapper>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-              vero quaerat rerum soluta hic? Doloremque, aperiam. Totam
-              reprehenderit explicabo officiis soluta quos, eveniet sit
-              repudiandae tempora illo consectetur? Illum, soluta?
-            </p>
-          </Right>
+          {content.map((item, index) => (
+            <div key={index} item={item}>
+              <Title>{item.title}</Title>
+              <IconWrapper>
+                <GrContact />
+              </IconWrapper>
+              <p>{item.p1}</p>
+              {/* <IconWrapper>
+                  <GrPersonalComputer />
+                </IconWrapper>  */}
+              {/*              
+                <IconWrapper>
+                  <MdOutlineContactSupport />
+                </IconWrapper> */}
+            </div>
+          ))}
         </ThreeCol>
       </DevDesignsWrapper>
-      <>
+      <div>
         <BottomCTA>
           <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>
           <ContactBtn style={{ background: "coral" }}>Lets go!</ContactBtn>
         </BottomCTA>
-      </>
-    </div>
+      </div>
+    </>
   );
 }

@@ -6,7 +6,7 @@ export const ContactBtn = styled.button`
   text-shadow: 1px 1px 1px #000;
   border: solid 1px #000;
   font-size: 17px;
-  padding: 10px 15px;
+  padding: 7px 12px;
   cursor: pointer;
   border-radius: 25px;
   // width: 280px;

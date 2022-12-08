@@ -3,6 +3,7 @@ import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import { ImgWrapper } from "../../styles/images/SectionImages.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import img1 from "../../../public/images/sketch2.jpg";
+import content from "./data/hero";
 import styled from "styled-components";
 
 const HeroContent = styled.div`
@@ -36,31 +37,42 @@ const Headline = styled.h4`
 }
 `;
 
-export default function Hero() {
+export default function Hero({
+  headline1,
+  headline2,
+  listItem1,
+  listItem2,
+  listItem3,
+  ctaBtn,
+}) {
   return (
-    <div>
+    <>
       <Grid>
         <LeftSide>
           <HeroContent>
-            <span> Web Design for Nutritional Professionals</span>
-            <Headline>
-              Stand out amongst the facebook diets fads and fake news.
-            </Headline>
-            <p>I can help by building websites. Here is how:</p>
-            <ul>
-              <li>bring more clients to your practice</li>
-              <li>nutrition education</li>
-              <li>make your business more profitable</li>
-            </ul>
-            <ContactBtn
-              style={{
-                marginTop: "10px",
-                background: "teal",
-                color: "aquamarine",
-              }}
-            >
-              Ready to get started? Lets goooo!
-            </ContactBtn>
+            <div>
+              {content.map((item, index) => (
+                <div key={index} item={item}>
+                  <h2>{item.headline1}</h2>
+                  <Headline>{item.headline2}</Headline>
+                  <p>{item.businessGoal}</p>
+                  <ul>
+                    <li>{item.listItem1}</li>
+                    <li>{item.listItem2}</li>
+                    <li>{item.listItem3}</li>
+                  </ul>
+                  <ContactBtn
+                    style={{
+                      marginTop: "10px",
+                      background: "teal",
+                      color: "aquamarine",
+                    }}
+                  >
+                    {item.ctaBtn}
+                  </ContactBtn>
+                </div>
+              ))}
+            </div>
           </HeroContent>
         </LeftSide>
         <RightSide>
@@ -74,6 +86,6 @@ export default function Hero() {
           </ImgWrapper>
         </RightSide>
       </Grid>
-    </div>
+    </>
   );
 }

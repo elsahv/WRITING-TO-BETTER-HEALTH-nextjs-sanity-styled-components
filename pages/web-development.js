@@ -8,7 +8,7 @@ export default function webDevelopment() {
   return (
     <>
       <WebDevHero />
-      <ServicesInclude />
+      {/* <ServicesInclude /> */}
       <MthlyUpdatesInclude />
       <PkgRate />
       <StandardOptimalPgs />

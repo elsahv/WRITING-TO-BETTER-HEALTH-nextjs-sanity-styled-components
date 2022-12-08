@@ -3,6 +3,7 @@ import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import img1 from "../../../public/images/sketch2.jpg";
 import { SmImgWrapper } from "../../styles/images/SectionImages.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
+import Accordian from "../../accordianContent/Accordian";
 import styled from "styled-components";
 import content from "./data/webDevHero";
 
@@ -38,9 +39,29 @@ export default function WebDevHero({ title, headline, p1, p2 }) {
             {content.map((item, index) => (
               <div key={item} item={item}>
                 <BannerTitle>{item.title}</BannerTitle>
-                <div>{item.title}</div>
                 <p>{item.p1}</p>
-                <p>{item.p2}</p>
+                <h2>{item.headline}</h2>
+
+                <Accordian />
+
+                {/* <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    background: "teal",
+                  }}
+                >
+                  <ul>
+                    <li>Custom-Designed Pages</li>
+                    <li>Unique Branding Specific To Your Ice Cream Store</li>
+                    <li>Monthly Analytics Reporting Setup</li>
+                  </ul>
+                  <ul>
+                    <li>Professionally-Written Content</li>
+                    <li>Demo Site During Design</li>
+                    <li>Explaining How To Access Our Service & Support</li>
+                  </ul>
+                </div> */}
               </div>
             ))}
 

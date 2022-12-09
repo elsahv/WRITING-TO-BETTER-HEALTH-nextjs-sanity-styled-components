@@ -11,6 +11,7 @@ const content = [
       " One-click phone number so mobile visitors can call you directly",
     listItem5: "Billed to any major credit card",
     listItem6: "24-month service minimum",
+    listItem7: "24-month service minimum",
   },
   {
     id: 2,

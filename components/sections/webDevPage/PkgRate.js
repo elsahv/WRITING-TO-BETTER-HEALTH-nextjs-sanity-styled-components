@@ -11,21 +11,26 @@ const Title = styled.h2`
   padding-left: 50px;
   margin-bottom: 5px;
   font-size: 30px;
-  // color: teal;
+  color: teal;
   // text-shadow: 1px 1px 1px #000;
 `;
 
 const Sq = styled.div`
-  background: teal;
+  // background: teal;
   color: #000;
   // text-shadow: 1px 1px 1px #000;
-  height: 270px;
+  height: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid 1px #000;
+  // border: solid 1px #000;
   text-align: center;
+  li {
+    border-bottom: solid 1px #000;
+    list-style: none;
+    padding: 2px 0;
+  }
 `;
 
 export default function PkgRate({
@@ -49,8 +54,8 @@ export default function PkgRate({
             <Sq>
               <h4
                 style={{
-                  color: "#fff",
-                  textShadow: "1px 1px 1px #000",
+                  color: "teal",
+                  // textShadow: "1px 1px 1px #000",
                   fontSize: "25px",
                 }}
               >

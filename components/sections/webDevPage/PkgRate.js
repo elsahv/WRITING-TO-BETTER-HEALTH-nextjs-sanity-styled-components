@@ -8,8 +8,11 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  text-align: center;
-  // margin-top: 50px;
+  padding-left: 50px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  // color: teal;
+  // text-shadow: 1px 1px 1px #000;
 `;
 
 const Sq = styled.div`

@@ -36,7 +36,17 @@ export default function MthlyServices(
             <ContactBtn style={{ margin: "0px 10px" }}>contact cta</ContactBtn>
           </div>
         </LeftSide>
-        <RightSide style={{ display: "flex", flexDirection: "column" }}>
+        <RightSide
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            background: "coral",
+            paddingLeft: "30px",
+            paddingBottom: "20px",
+            marginBottom: "50px",
+            border: "solid 1px #000",
+          }}
+        >
           {content.map((item, index) => (
             <div key={index} item={item}>
               <StandardOptimalSq>

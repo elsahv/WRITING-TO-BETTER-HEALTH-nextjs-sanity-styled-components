@@ -11,6 +11,7 @@ const Sq = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 20px 20px 50px 20px;
+  height: 200px;
 `;
 const IconWrapper = styled.div`
   font-size: 45px;

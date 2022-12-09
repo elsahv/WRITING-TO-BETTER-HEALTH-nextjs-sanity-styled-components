@@ -7,7 +7,7 @@ const content = [
   },
   {
     id: 2,
-    title: "Unique Branding Specific To Your Ice Cream Store",
+    title: "Unique Branding for Nutritional Services",
     contentBody:
       "Your website will be fully customized with your logo, color palette, pictures, and content. While we use templates to keep our rates competitive, your ice cream store website will be customized uniquely yours.",
   },

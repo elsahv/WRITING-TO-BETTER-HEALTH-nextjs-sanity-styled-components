@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Data } from "./data";
+import { Data } from "./pkgRatesData";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { FiPlus, FiMinus } from "react-icons/fi";

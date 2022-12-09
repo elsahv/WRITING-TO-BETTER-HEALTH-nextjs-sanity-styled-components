@@ -1,9 +1,6 @@
 const content = [
   {
     id: 1,
-    title: "Monthly Updates Includes:",
-    contentBody1:
-      "Our monthly service includes 60 minutes of design time from our team every month so as your business changes, your website will adapt too:",
     listItem: "Add a new flavor",
   },
   {
@@ -49,8 +46,6 @@ const content = [
   {
     id: 12,
     listItem: "Monthly security & software updates",
-    contentBody2:
-      "Along with changes to content, we’ll also keep your website’s software and security measures updated behind the scenes so your customers will always get the best experience on any device they’re using.",
   },
 ];
 

@@ -1,6 +1,8 @@
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import content from "./data/pkgRate";
+
 import styled from "styled-components";
+// import PkgRatesAccordian from "../../accordians/PkgRatesAccordian";
 
 export default function PkgRate({
   title,
@@ -17,6 +19,7 @@ export default function PkgRate({
     <>
       {/* PKGS CATERED TO DIETITIANS */}
       <h2 style={{ textAlign: "center", marginTop: "50px" }}>Package Rate</h2>
+      {/* <PkgRatesAccordian /> */}
       <div style={{ display: "flex", background: "teal" }}>
         {content.map((item, index) => (
           <div key={index} item={item}>
@@ -29,7 +32,7 @@ export default function PkgRate({
             <div>{item.listItem5}</div>
             <div>{item.listItem6}</div>
             <div>{item.listItem7}</div>
-            <ContactBtn>contact cta</ContactBtn>
+            {/* <ContactBtn>contact cta</ContactBtn> */}
           </div>
         ))}
       </div>

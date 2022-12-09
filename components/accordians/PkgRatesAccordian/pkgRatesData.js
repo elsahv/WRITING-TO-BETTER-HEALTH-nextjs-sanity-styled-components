@@ -31,7 +31,6 @@ export const Data = [
   },
   {
     id: 6,
-
     service: "Explaining How To Access Our Service & Support",
     description:
       " Both your visitors and Google value websites that are properly optimized....  Your monthly service package includes behind-the-scenes tech support, design time from our team, and the confidence that your website will be your 24/7 sales person.",

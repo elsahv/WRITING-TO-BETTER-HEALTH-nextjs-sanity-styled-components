@@ -1,8 +1,29 @@
-import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import content from "./data/pkgRate";
-
+import { ThreeCol } from "../../styles/ThreeCol.styled";
 import styled from "styled-components";
-// import PkgRatesAccordian from "../../accordians/PkgRatesAccordian";
+
+const Wrapper = styled.div`
+  // background: coral;
+  padding: 30px 20px;
+`;
+
+const Title = styled.h2`
+  text-align: center;
+  // margin-top: 50px;
+`;
+
+const Sq = styled.div`
+  background: teal;
+  color: #000;
+  // text-shadow: 1px 1px 1px #000;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px #000;
+  text-align: center;
+`;
 
 export default function PkgRate({
   title,
@@ -16,26 +37,36 @@ export default function PkgRate({
   listItem7,
 }) {
   return (
-    <>
+    <Wrapper>
       {/* PKGS CATERED TO DIETITIANS */}
-      <h2 style={{ textAlign: "center", marginTop: "50px" }}>Package Rate</h2>
-      {/* <PkgRatesAccordian /> */}
-      <div style={{ display: "flex", background: "teal" }}>
+      <Title>Package Rate</Title>
+      <ThreeCol>
         {content.map((item, index) => (
           <div key={index} item={item}>
-            <h4>{item.title}</h4>
-            <div>{item.price}</div>
-            <div>{item.listItem1}</div>
-            <div>{item.listItem2}</div>
-            <div>{item.listItem3}</div>
-            <div>{item.listItem4}</div>
-            <div>{item.listItem5}</div>
-            <div>{item.listItem6}</div>
-            <div>{item.listItem7}</div>
-            {/* <ContactBtn>contact cta</ContactBtn> */}
+            <Sq>
+              <h4
+                style={{
+                  color: "#fff",
+                  textShadow: "1px 1px 1px #000",
+                  fontSize: "25px",
+                }}
+              >
+                {item.title}
+              </h4>
+              <div>{item.price}</div>
+              <ul>
+                <li>{item.listItem1}</li>
+                <li>{item.listItem2}</li>
+                <li>{item.listItem3}</li>
+                <li>{item.listItem4}</li>
+                <li>{item.listItem5}</li>
+                <li>{item.listItem6}</li>
+                <li>{item.listItem7}</li>
+              </ul>
+            </Sq>
           </div>
         ))}
-      </div>
-    </>
+      </ThreeCol>
+    </Wrapper>
   );
 }

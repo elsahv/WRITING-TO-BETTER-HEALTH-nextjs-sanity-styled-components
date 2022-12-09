@@ -11,6 +11,11 @@ const content = [
     listItem4:
       "Our Story (Tell your customers who you are and why you love ice cream)",
     listItem5: "Contact Us (including links to your social media channels)",
+    listItem6:
+      "  Join Our Newsletter (using 3rd party service of your choice. Their rates apply)",
+    listItem7: "Specials Or Seasonal Promotions",
+    listItem8:
+      "Separate Menu Pages (for additional products – coffee, bakery, etc)",
   },
   {
     id: 2,

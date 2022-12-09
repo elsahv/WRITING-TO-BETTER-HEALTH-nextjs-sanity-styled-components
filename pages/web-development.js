@@ -6,8 +6,10 @@ export default function webDevelopment() {
   return (
     <>
       <WebDevHero />
-      <PkgRate />
-      <StandardOptimalPgs />
+      <div style={{ border: "solid 1px #000" }}>
+        <PkgRate />
+        <StandardOptimalPgs />
+      </div>
       scroll to top button
     </>
   );

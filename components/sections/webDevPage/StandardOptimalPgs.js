@@ -28,21 +28,29 @@ export default function MthlyServices(
     <>
       <Grid>
         <LeftSide>
-          <ContactBtn>contact cta</ContactBtn>
+          <div style={{ marginTop: "40px", padding: "50px" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla neque
+            eveniet earum quod tempore quasi, veniam corrupti omnis natus, optio
+            ad, accusantium enim accusamus! Autem cumque veniam reiciendis est
+            sequi.
+            <ContactBtn style={{ margin: "0px 10px" }}>contact cta</ContactBtn>
+          </div>
         </LeftSide>
         <RightSide style={{ display: "flex", flexDirection: "column" }}>
           {content.map((item, index) => (
             <div key={index} item={item}>
               <StandardOptimalSq>
                 <StandardOptimalTitle>{item.title}</StandardOptimalTitle>
-                <div>{item.listItem1}</div>
-                <div>{item.listItem2}</div>
-                <div>{item.listItem3}</div>
-                <div>{item.listItem4}</div>
-                <div>{item.listItem5}</div>
-                <div>{item.listItem6}</div>
-                <div>{item.listItem7}</div>
-                <div>{item.listItem8}</div>
+                <ul>
+                  <li>{item.listItem1}</li>
+                  <li>{item.listItem2}</li>
+                  <li>{item.listItem3}</li>
+                  <li>{item.listItem4}</li>
+                  <li>{item.listItem5}</li>
+                  <li>{item.listItem6}</li>
+                  <li>{item.listItem7}</li>
+                  <li>{item.listItem8}</li>
+                </ul>
               </StandardOptimalSq>
             </div>
           ))}

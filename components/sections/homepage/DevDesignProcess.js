@@ -31,20 +31,6 @@ const Banner = styled.div`
   font-size: 20px;
 `;
 
-const BottomCTA = styled.div`
-  background-image: url("/images/sketch3.jpg");
-  // background-repeat: no-repeat;
-  border-top: solid 1px #000;
-  color: #fff;
-  text-shadow: 3px 3px 3px #000;
-  width: 100%;
-  // padding: 60px 0 20px 300px;
-  height: 250px;
-  @media only screen and (max-width: 800px) {
-    // padding: 0;
-  }
-`;
-
 const Title = styled.h4`
   font-size: 30px;
   @media only screen and (max-width: 1024px) {
@@ -81,13 +67,11 @@ export default function DevDesignProcess() {
             </div>
           ))}
         </ThreeCol>
-      </DevDesignsWrapper>
-      <div>
-        <BottomCTA>
+        <div>
           <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>
           <ContactBtn style={{ background: "coral" }}>Lets go!</ContactBtn>
-        </BottomCTA>
-      </div>
+        </div>
+      </DevDesignsWrapper>
     </>
   );
 }

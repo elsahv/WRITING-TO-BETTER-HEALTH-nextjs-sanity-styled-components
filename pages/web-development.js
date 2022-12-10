@@ -10,7 +10,7 @@ export default function webDevelopment() {
         <PkgRate />
         <StandardOptimalPgs />
       </div>
-      scroll to top button
+      {/* scroll to top button */}
     </>
   );
 }

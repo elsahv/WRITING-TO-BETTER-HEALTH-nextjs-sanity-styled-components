@@ -5,6 +5,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   // background: coral;
   padding: 30px 20px;
+  border-top: solid 1px #000;
 `;
 
 const Title = styled.h2`

@@ -6,26 +6,11 @@ import {
   PostCategoryBtn,
   PostTagBtn,
 } from "../components/styles/buttons/BlogPostBtns.styled";
+
+import { Banner, BlogPageTitle } from "../components/styles/PageBanner.styled";
 import styled from "styled-components";
 
 // STYLES
-const Banner = styled.div`
-  text-align: left;
-  color: #000;
-  padding: 100px 150px;
-  // background: coral;
-
-  @media only screen and (max-width: 800px) {
-    padding: 30px 50px;
-  }
-`;
-
-const BlogPageTitle = styled.h2`
-  font-weight: bold;
-  font-size: 35px;
-  // color: teal;
-  // text-shadow: 1px 1px 1px #000;
-`;
 
 export const PostsWrapper = styled.div`
   // background: orange;

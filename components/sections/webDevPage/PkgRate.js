@@ -1,4 +1,4 @@
-import content from "./data/pkgRate";
+import content from "../../../data/webDevPage/pkgRate";
 import { ThreeCol } from "../../styles/ThreeCol.styled";
 import styled from "styled-components";
 

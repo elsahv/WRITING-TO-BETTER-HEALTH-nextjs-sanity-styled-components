@@ -5,7 +5,7 @@ import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import { ImgWrapper } from "../../styles/images/SectionImages.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import img1 from "../../../public/images/sketch2.jpg";
-import content from "../../../data/hero";
+import content from "../../../data/homePage/hero";
 import styled from "styled-components";
 
 const HeroContent = styled.div`

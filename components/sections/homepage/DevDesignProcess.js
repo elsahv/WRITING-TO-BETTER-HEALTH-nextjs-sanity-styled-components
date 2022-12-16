@@ -5,7 +5,7 @@ import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import styled from "styled-components";
-import content from "../../../data/devdesign";
+import content from "../../../data/homePage/devdesign";
 
 const DevDesignsWrapper = styled.div`
   padding: 20px 100px;

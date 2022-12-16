@@ -1,5 +1,5 @@
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
-import content from "./data/standardOptionalPg";
+import content from "../../../data/webDevPage/standardOptionalPg";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 
 import styled from "styled-components";

@@ -1,4 +1,4 @@
-import content from "../../../data/threeCol";
+import content from "../../../data/homePage/threeCol";
 import { ThreeCol } from "../../styles/ThreeCol.styled";
 import { RiPlantLine } from "react-icons/ri";
 import { FcSmartphoneTablet, FcComboChart } from "react-icons/fc";

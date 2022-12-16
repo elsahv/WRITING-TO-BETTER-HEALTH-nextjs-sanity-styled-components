@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import { SmImgWrapper } from "../../styles/images/SectionImages.styled";
 import img2 from "../../../public/images/sketch2.jpg";
-import content from "../../../data/sellingPts";
+import content from "../../../data/homePage/sellingPts";
 import styled from "styled-components";
 
 const SellingPts = styled.div`

@@ -1,16 +1,16 @@
 export default {
-  name: "services",
-  title: "Services",
+  name: "pkgRates",
+  title: "Package Rates",
   type: "document",
   fields: [
     {
-      name: "serviceTitle",
-      title: "Service Title",
+      name: "pkgRateTitle",
+      title: "Package Rate Title",
       type: "string",
     },
     {
       name: "serviceDescription",
-      title: "Service Description",
+      title: "Package Rate Description",
       type: "string",
     },
   ],

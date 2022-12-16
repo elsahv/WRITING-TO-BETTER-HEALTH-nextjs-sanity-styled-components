@@ -5,7 +5,7 @@ import { SmImgWrapper } from "../../styles/images/SectionImages.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import Accordian from "../../accordians/ServicesIncludeAccordian";
 import styled from "styled-components";
-import content from "./data/webDevHero";
+import content from "../../../data/webDevPage/webDevHero";
 
 // STYLES
 

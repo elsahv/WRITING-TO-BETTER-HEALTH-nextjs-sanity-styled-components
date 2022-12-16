@@ -21,7 +21,11 @@ export default function Header() {
           </Navlinks>
 
           <ContactBtnWrapper>
-            <ContactBtn>Contact</ContactBtn>
+            <ContactBtn>
+              <Link href="/contact" className="nav-link">
+                Contact
+              </Link>
+            </ContactBtn>
           </ContactBtnWrapper>
         </Grid>
       </Nav>

@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 import { ThreeCol, Left, Middle, Right } from "../../styles/ThreeCol.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import styled from "styled-components";
-import content from "./data/devdesign";
+import content from "../../../data/devdesign";
 
 const DevDesignsWrapper = styled.div`
   padding: 20px 100px;
@@ -69,7 +71,9 @@ export default function DevDesignProcess() {
         </ThreeCol>
         <div>
           <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>
-          <ContactBtn style={{ background: "coral" }}>Lets go!</ContactBtn>
+          <ContactBtn style={{ background: "coral" }}>
+            <Link href="/contact">Lets go!</Link>
+          </ContactBtn>
         </div>
       </DevDesignsWrapper>
     </>

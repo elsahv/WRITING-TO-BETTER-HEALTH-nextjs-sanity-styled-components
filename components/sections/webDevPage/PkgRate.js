@@ -8,11 +8,15 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  padding-left: 50px;
+  // padding-left: 50px;
+  padding: 20px 0;
+  text-align: center;
   margin-bottom: 5px;
-  font-size: 30px;
-  color: teal;
+  text-decoration: underline;
+  font-size: 34px;
+  // color: #fff;
   // text-shadow: 1px 1px 1px #000;
+  // background: teal;
 `;
 
 const Sq = styled.div`
@@ -29,7 +33,7 @@ const Sq = styled.div`
   li {
     border-bottom: solid 1px #000;
     list-style: none;
-    padding: 2px 0;
+    padding: 5px 0;
   }
 `;
 
@@ -54,8 +58,8 @@ export default function PkgRate({
             <Sq>
               <h4
                 style={{
-                  color: "teal",
-                  // textShadow: "1px 1px 1px #000",
+                  // color: "teal",
+                  textDecoration: "",
                   fontSize: "25px",
                 }}
               >

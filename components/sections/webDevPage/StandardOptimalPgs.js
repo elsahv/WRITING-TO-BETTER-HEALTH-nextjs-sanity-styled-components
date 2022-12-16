@@ -26,7 +26,7 @@ export default function MthlyServices(
 ) {
   return (
     <>
-      <Grid>
+      <Grid style={{ marginTop: "200px" }}>
         <LeftSide>
           <div style={{ marginTop: "40px", padding: "50px" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla neque

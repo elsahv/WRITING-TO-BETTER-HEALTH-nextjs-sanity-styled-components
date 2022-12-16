@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
 import { ImgWrapper } from "../../styles/images/SectionImages.styled";
 import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
 import img1 from "../../../public/images/sketch2.jpg";
-import content from "./data/hero";
+import content from "../../../data/hero";
 import styled from "styled-components";
 
 const HeroContent = styled.div`
@@ -68,7 +70,7 @@ export default function Hero({
                       color: "aquamarine",
                     }}
                   >
-                    {item.ctaBtn}
+                    <Link href="/contact">{item.ctaBtn}</Link>
                   </ContactBtn>
                 </div>
               ))}

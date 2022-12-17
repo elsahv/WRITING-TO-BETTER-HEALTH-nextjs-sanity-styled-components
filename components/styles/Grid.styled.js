@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Grid = styled.div`
+  // background: orange;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "leftSide rightSide";
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-areas:
       "leftSide"

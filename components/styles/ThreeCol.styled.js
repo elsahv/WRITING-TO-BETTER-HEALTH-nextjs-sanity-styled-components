@@ -6,6 +6,13 @@ export const ThreeCol = styled.div`
   grid-template-areas: "left middle right";
   grid-gap: 1em;
 
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "left middle"
+      "right .";
+  }
+
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     grid-template-areas:

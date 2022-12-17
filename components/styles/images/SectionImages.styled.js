@@ -11,6 +11,11 @@ export const ImgWrapper = styled.div`
     height: 400px;
     padding: auto;
   }
+  @media only screen and (max-width: 531px) {
+    width: 300px;
+    height: 300px;
+    padding: auto;
+  }
 `;
 
 export const SmImgWrapper = styled.div`
@@ -18,15 +23,14 @@ export const SmImgWrapper = styled.div`
   background: teal;
   width: 450px;
   height: 400px;
-  // display: flex;
-  // justify-content: center;
 
   @media only screen and (max-width: 1024px) {
-    padding: 20px 0 100px 150px;
-    // margin-top: 50px;
+    // padding: 20px 0 100px 150px;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 531px) {
     padding: 0;
+    width: 350px;
+    height: 300px;
   }
 `;

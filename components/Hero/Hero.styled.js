@@ -11,7 +11,7 @@ export const HeroContent = styled.div`
   }
   @media only screen and (max-width: 1024px) {
     padding: 80px 60px;
-    // margin-top: 50px;
+    height: 80%;
   }
   @media only screen and (max-width: 600px) {
     // padding: 50px 0 30px 40px;
@@ -21,7 +21,7 @@ export const HeroContent = styled.div`
 export const Headline = styled.h4`
   font-size: 45px;
   @media only screen and (max-width: 1024px) {
-  font-size: 30px;
+  font-size: 27px;
   }
  
     @media only screen and (max-width: 834px) {

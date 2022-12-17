@@ -14,7 +14,7 @@ export default function SellingPoints({ headline1, headline2, p1, p2, p3 }) {
             <div key={index} item={item}>
               <SellingPts>
                 <h2>{item.headline1}</h2>
-                <h2>{item.headline2}</h2>
+                <p>{item.headline2}</p>
                 <p>{item.p1}</p>
                 <p>{item.p2}</p>
                 <p>{item.p3}</p>

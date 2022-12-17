@@ -33,7 +33,7 @@ export default function Hero({
                   </ul>
                   <ContactBtn
                     style={{
-                      marginTop: "10px",
+                      marginTop: "15px",
                       background: "teal",
                       color: "aquamarine",
                     }}

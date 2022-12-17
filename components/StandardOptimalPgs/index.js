@@ -1,19 +1,9 @@
-import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
-import content from "../../../data/webDevPage/standardOptionalPg";
-import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
+import { Grid, LeftSide, RightSide } from "../styles/Grid.styled";
+import content from "./data";
+import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
+import { StandardOptimalSq, StandardOptimalTitle } from "./StandardPgs.styled";
 
-import styled from "styled-components";
-
-const StandardOptimalSq = styled.div`
-  // background: green;
-  // text-align: right;
-`;
-
-const StandardOptimalTitle = styled.h2`
-  margin-top: 40px;
-`;
-
-export default function MthlyServices(
+export default function standardOptimalPgs(
   title,
   listItem1,
   listItem2,

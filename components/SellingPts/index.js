@@ -1,39 +1,15 @@
-import content from "../../../data/homePage/threeCol";
-import { ThreeCol } from "../../styles/ThreeCol.styled";
+import content from "./data";
+import { ThreeCol } from "../styles/ThreeCol.styled";
 import { RiPlantLine } from "react-icons/ri";
 import { FcSmartphoneTablet, FcComboChart } from "react-icons/fc";
-import styled from "styled-components";
-
-const CTA = styled.div`
-  padding-left: 35px;
-  padding-bottom: 20px;
-`;
-
-const Title = styled.h2`
-  font-size: 30px;
-`;
-
-const Headline1 = styled.h4`
-  font-size: 22px;
-`;
-
-const Headline2 = styled.div`
-  font-size: 20px;
-  padding-top: 20px;
-`;
-
-const Sq = styled.div`
-  border: solid 2px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px 20px 50px 20px;
-  height: 200px;
-`;
-const IconWrapper = styled.div`
-  font-size: 45px;
-`;
+import {
+  CTA,
+  Title,
+  Headline1,
+  Headline2,
+  Sq,
+  IconWrapper,
+} from "./SellingPts.styled";
 
 export default function ThreeColumnSection({ title, contentBody, icon }) {
   return (

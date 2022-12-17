@@ -1,43 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-
-import { Grid, LeftSide, RightSide } from "../../styles/Grid.styled";
-import { ImgWrapper } from "../../styles/images/SectionImages.styled";
-import { ContactBtn } from "../../styles/buttons/ContactBtn.styled";
-import img1 from "../../../public/images/sketch2.jpg";
-import content from "../../../data/homePage/hero";
-import styled from "styled-components";
-
-const HeroContent = styled.div`
-  // background: red;
-  padding-top: 30%;
-  padding-left: 40px;
-  li {
-    padding-top: 5px;
-    padding-left: 10px;
-  }
-  @media only screen and (max-width: 1024px) {
-    padding: 80px 60px;
-    // margin-top: 50px;
-  }
-  @media only screen and (max-width: 600px) {
-    // padding: 50px 0 30px 40px;
-  }
-`;
-
-const Headline = styled.h4`
-  font-size: 45px;
-  @media only screen and (max-width: 1024px) {
-  font-size: 30px;
-  }
- 
-    @media only screen and (max-width: 834px) {
-      font-size: 20px;
-
-      }
-
-}
-`;
+import { Grid, LeftSide, RightSide } from "../styles/Grid.styled";
+import { ImgWrapper } from "../styles/images/SectionImages.styled";
+import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
+import img1 from "../../public/images/sketch2.jpg";
+import content from "./data";
+import { HeroContent, Headline } from "./HomePageHeroStyled";
 
 export default function Hero({
   headline1,

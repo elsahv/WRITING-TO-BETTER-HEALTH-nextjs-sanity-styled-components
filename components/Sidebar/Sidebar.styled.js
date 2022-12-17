@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 
 export const SidebarWrapper = styled.div`
@@ -51,22 +50,3 @@ export const NavLinks = styled.div`
     font-size: 16px;
   }
 `;
-
-const Sidebar = () => {
-  return (
-    <>
-      <SidebarWrapper>
-        <Logo>
-          <Link href="/">Writing to Better Health</Link>
-        </Logo>
-        <NavLinks>
-          <Link href="/web-development">Web Development</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact</Link>
-        </NavLinks>
-      </SidebarWrapper>
-    </>
-  );
-};
-
-export default Sidebar;

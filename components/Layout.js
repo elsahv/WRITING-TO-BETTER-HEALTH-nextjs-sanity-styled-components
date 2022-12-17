@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/Global.js";
 import Footer from "./Footer";
 import Header from "./Header";
-import Sidebar from "./Sidebar.js";
+import Sidebar from "./Sidebar/index.js";
 
 const theme = {
   mobile: "1024",

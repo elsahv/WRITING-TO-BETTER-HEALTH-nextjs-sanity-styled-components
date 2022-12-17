@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Nav, Grid, Navlinks, ContactBtnWrapper } from "./styles/Header.styled";
-import { ContactBtn } from "./styles/buttons/ContactBtn.styled";
+import { Nav, Grid, Navlinks, ContactBtnWrapper } from "./Header.styled";
+import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
 
 export default function Header() {
   return (

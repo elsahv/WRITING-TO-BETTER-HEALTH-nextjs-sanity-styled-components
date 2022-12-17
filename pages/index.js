@@ -1,12 +1,8 @@
 import Head from "next/head";
-import HomePageHero from "../components/sections/homepage/HomePageHero";
-import FirstSellingPts from "../components/sections/homepage/FirstSellingPts";
-import SellingPoints from "../components/sections/homepage/SellingPoints";
-import DevDesignProcess from "../components/sections/homepage/DevDesignProcess";
-
-//* STYLES
-
-//* END STYLES
+import HomePageHero from "../components/HomePageHero";
+import SellingPts from "../components/SellingPts";
+import AboutSection from "../components/AboutSection";
+import DevDesignProcess from "../components/DevDesignProcess";
 
 export default function Home() {
   return (
@@ -18,8 +14,8 @@ export default function Home() {
       </Head>
       <>
         <HomePageHero />
-        <FirstSellingPts />
-        <SellingPoints />
+        <SellingPts />
+        <AboutSection />
         <DevDesignProcess />
       </>
     </div>

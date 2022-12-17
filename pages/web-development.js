@@ -1,7 +1,6 @@
-import StandardOptimalPgs from "../components/sections/webDevPage/StandardOptimalPgs";
-import PkgRate from "../components/sections/webDevPage/PkgRate";
-import ServicesInclude from "../components/sections/webDevPage/ServicesInclude";
-import styled from "styled-components";
+import StandardOptimalPgs from "../components/StandardOptimalPgs";
+import PkgRate from "../components/PkgRate";
+import ServicesInclude from "../components/ServicesInclude";
 
 import { Banner, BlogPageTitle } from "../components/styles/PageBanner.styled";
 export default function webDevelopment() {

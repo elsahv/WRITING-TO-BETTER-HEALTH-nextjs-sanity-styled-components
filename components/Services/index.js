@@ -5,7 +5,7 @@ import { SmImgWrapper } from "../styles/images/SectionImages.styled";
 import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
 import Accordian from "../Accordian";
 import content from "./data";
-import { BannerTitle, ContactBtnsWrapper } from "./ServicesInclude.styled";
+import { BannerTitle, ContactBtnsWrapper } from "./Services.styled";
 
 export default function WebDevHero({ title, headline, p1, p2 }) {
   return (

@@ -2,14 +2,7 @@ import content from "./data";
 import { ThreeCol } from "../styles/ThreeCol.styled";
 import { RiPlantLine } from "react-icons/ri";
 import { FcSmartphoneTablet, FcComboChart } from "react-icons/fc";
-import {
-  CTA,
-  Title,
-  Headline1,
-  Headline2,
-  Sq,
-  IconWrapper,
-} from "./SellingPts.styled";
+import { CTA, Title, Headline1, Headline2, Sq, IconWrapper } from "./Info";
 
 export default function ThreeColumnSection({ title, contentBody, icon }) {
   return (

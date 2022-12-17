@@ -3,7 +3,7 @@ import { Grid, LeftSide, RightSide } from "../styles/Grid.styled";
 import { SmImgWrapper } from "../styles/images/SectionImages.styled";
 import img2 from "../../public/images/sketch2.jpg";
 import content from "./data";
-import { SellingPts } from "./AboutSection.styled";
+import { SellingPts } from "./About.styled";
 
 export default function SellingPoints({ headline1, headline2, p1, p2, p3 }) {
   return (

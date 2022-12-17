@@ -5,7 +5,7 @@ import { ImgWrapper } from "../styles/images/SectionImages.styled";
 import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
 import img1 from "../../public/images/sketch2.jpg";
 import content from "./data";
-import { HeroContent, Headline } from "./HomePageHeroStyled";
+import { HeroContent, Headline } from "./Hero.styled";
 
 export default function Hero({
   headline1,

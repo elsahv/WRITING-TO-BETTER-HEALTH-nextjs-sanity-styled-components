@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeroContent = styled.div`
   // background: red;
+  height: 100vh;
   padding-top: 30%;
   padding-left: 40px;
   li {
@@ -26,6 +27,5 @@ export const Headline = styled.h4`
     @media only screen and (max-width: 834px) {
       font-size: 20px;
       }
-
 }
 `;

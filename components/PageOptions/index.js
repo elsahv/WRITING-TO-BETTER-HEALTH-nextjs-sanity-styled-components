@@ -1,7 +1,7 @@
 import { Grid, LeftSide, RightSide } from "../styles/Grid.styled";
 import content from "./data";
 import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
-import { StandardOptimalSq, StandardOptimalTitle } from "./StandardPgs.styled";
+import { StandardOptimalSq, StandardOptimalTitle } from "./PageOptions";
 
 export default function standardOptimalPgs(
   title,

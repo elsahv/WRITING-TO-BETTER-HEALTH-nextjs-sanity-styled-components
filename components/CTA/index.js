@@ -5,12 +5,7 @@ import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import content from "./data";
-import {
-  Banner,
-  DevDesignsWrapper,
-  Title,
-  IconWrapper,
-} from "./DevDesign.styled";
+import { Banner, DevDesignsWrapper, Title, IconWrapper } from "./CTA";
 
 export default function DevDesignProcess() {
   return (

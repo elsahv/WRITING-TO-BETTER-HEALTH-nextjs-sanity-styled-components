@@ -18,11 +18,32 @@ export const Title = styled.h2`
   // background: teal;
 `;
 
+export const ContentBody = styled.p`
+  padding: 0px 70px 50px;
+`;
+
+export const PkgRateWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const PkgRateContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  // background: pink;
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
 export const Sq = styled.div`
   // background: teal;
   color: #000;
   // text-shadow: 1px 1px 1px #000;
-  height: 290px;
   display: flex;
   justify-content: center;
   align-items: center;

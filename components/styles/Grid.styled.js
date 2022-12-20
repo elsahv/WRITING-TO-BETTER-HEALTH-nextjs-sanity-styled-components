@@ -6,7 +6,7 @@ export const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "leftSide rightSide";
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
     grid-template-areas:
       "leftSide"
@@ -20,6 +20,7 @@ export const LeftSide = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding: 50px;
 `;
 export const RightSide = styled.div`
   grid-area: rightSide;

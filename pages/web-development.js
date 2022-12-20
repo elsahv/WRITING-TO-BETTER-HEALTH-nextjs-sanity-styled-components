@@ -53,8 +53,8 @@ export default function webDevelopment() {
             <ContactBtn>Contact</ContactBtn>
           </ButtonContainer>
         </ButtonWrapper>
-        {/* <PkgRate />
-        <PageOptions /> */}
+        <PkgRate />
+        <PageOptions />
       </div>
     </>
   );

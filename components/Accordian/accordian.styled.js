@@ -43,6 +43,15 @@ export const Wrap = styled.div`
   }
 `;
 
+export const ServiceTitle = styled.h2`
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 22px;
+  @media only screen and (max-width: 531px) {
+    font-size: 17px;
+  }
+`;
+
 export const Dropdown = styled.div`
   background: aquamarine;
   color: #000;

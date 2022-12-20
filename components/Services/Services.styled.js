@@ -36,6 +36,9 @@ export const ServicesTitle = styled.h2`
   @media only screen and (max-width: 600px) {
     font-size: 20px;
   }
+  @media only screen and (max-width: 531px) {
+    font-size: 20px;
+  }
 `;
 
 export const ServiceRight = styled.div`
@@ -43,4 +46,14 @@ export const ServiceRight = styled.div`
   // background: coral;
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 1024px) {
+    padding-top: 150px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: 220px;
+  }
+  @media only screen and (max-width: 499px) {
+    padding-top: 420px;
+  }
 `;

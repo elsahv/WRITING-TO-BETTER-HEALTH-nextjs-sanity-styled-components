@@ -7,6 +7,7 @@ import {
   AccordionSection,
   Container,
   Wrap,
+  ServiceTitle,
   Dropdown,
 } from "./accordian.styled";
 
@@ -27,7 +28,7 @@ const Accordian = () => {
               return (
                 <>
                   <Wrap onClick={() => toggle(index)} key={index}>
-                    <h1>{item.service}</h1>
+                    <ServiceTitle>{item.service}</ServiceTitle>
                     <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                   </Wrap>
                   {clicked === index ? (

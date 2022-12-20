@@ -17,6 +17,12 @@ export default function PkgRate({
     <Wrapper>
       {/* PKGS CATERED TO DIETITIANS */}
       <Title>Package Rate</Title>
+      <div style={{ padding: "0px 45px 50px" }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        temporibus quae corrupti, magni obcaecati consequuntur, maxime at
+        sapiente quasi tenetur deserunt! Possimus voluptate ut est incidunt
+        porro voluptas tenetur voluptatum.
+      </div>
       <ThreeCol>
         {content.map((item, index) => (
           <div key={index} item={item}>

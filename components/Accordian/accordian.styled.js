@@ -29,10 +29,9 @@ export const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // width: 100%;
   text-align: center;
   cursor: pointer;
-  width: 500px;
+  // width: 500px;
 
   h1 {
     padding: 25px;
@@ -48,7 +47,7 @@ export const Dropdown = styled.div`
   background: aquamarine;
   color: #000;
   // text-shadow: 1px 1px 1px #000;
-  width: 500px;
+  // width: 500px;
 
   // height: 100px;
   display: flex;

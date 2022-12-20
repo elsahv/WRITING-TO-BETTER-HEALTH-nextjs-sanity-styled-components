@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ServicesGrid = styled.div`
-  // background: orange;
+  background: orange;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "leftSide rightSide";
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-areas:
       "leftSide"
@@ -21,23 +21,6 @@ export const ServiceLeft = styled.div`
   justify-content: center;
   align-items: flex-start;
 `;
-
-export const LeftWrapper = styled.div`
-  padding: 100px 150px;
-  @media only screen and (max-width: 600px) {
-    padding: 20px 70px;
-  }
-  @media only screen and (max-width: 531px) {
-    padding: 10px;
-  }
-`;
-
-export const ServicesTitle = styled.h2`
-  @media only screen and (max-width: 600px) {
-    font-size: 20px;
-  }
-`;
-
 export const ServiceRight = styled.div`
   grid-area: rightSide;
   // background: coral;

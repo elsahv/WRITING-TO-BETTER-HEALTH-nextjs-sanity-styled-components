@@ -2,6 +2,25 @@ import Head from "next/head";
 import PageOptions from "../components/PageOptions";
 import PkgRate from "../components/PkgRate";
 import Services from "../components/Services";
+import { ContactBtn } from "../components/styles/buttons/ContactBtn.styled";
+import styled from "styled-components";
+
+const ButtonWrapper = styled.div`
+  // background: teal;
+  border: solid 1px #000;
+  padding: 30px;
+  margin-bottom: 200px;
+  p {
+    padding: 20px 50px;
+  }
+`;
+const ButtonContainer = styled.div`
+  // background: pink;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+`;
 
 import { Banner, BlogPageTitle } from "../components/styles/PageBanner.styled";
 export default function webDevelopment() {
@@ -21,8 +40,21 @@ export default function webDevelopment() {
       </Banner>
       <div style={{ border: "solid 1px #000" }}>
         <Services />
-        <PkgRate />
-        <PageOptions />
+        <ButtonWrapper>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            sequi animi perspiciatis mollitia explicabo, soluta doloribus culpa
+            incidunt? Ipsum facere excepturi, beatae quasi suscipit vero est
+            dolore blanditiis numquam debitis?
+          </p>
+
+          <ButtonContainer>
+            <ContactBtn>See packages</ContactBtn>
+            <ContactBtn>Contact</ContactBtn>
+          </ButtonContainer>
+        </ButtonWrapper>
+        {/* <PkgRate />
+        <PageOptions /> */}
       </div>
     </>
   );

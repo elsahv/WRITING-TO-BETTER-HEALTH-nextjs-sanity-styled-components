@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  // background: coral;
+  background: lightgray;
   padding: 30px 20px;
-  border-top: solid 1px #000;
+  // border: solid 1px #000;
 `;
 
 export const Title = styled.h2`

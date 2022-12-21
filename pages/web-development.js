@@ -38,7 +38,7 @@ export default function webDevelopment() {
           voluptates corporis quia a placeat asperiores ratione ducimus?
         </p>
       </Banner>
-      <div style={{ border: "solid 1px #000" }}>
+      <div style={{ borderTop: "solid 1px #000" }}>
         <Services />
         <ButtonWrapper>
           <p>

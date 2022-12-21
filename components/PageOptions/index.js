@@ -21,7 +21,7 @@ export default function standardOptimalPgs(
 ) {
   return (
     <>
-      <Grid>
+      <Grid style={{ marginTop: "50px" }}>
         <LeftSide>
           <PgOptionsContentBody>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla neque

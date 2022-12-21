@@ -79,7 +79,6 @@ export const PostsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
-  border-bottom: solid 1px #000;
 
   @media only screen and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);

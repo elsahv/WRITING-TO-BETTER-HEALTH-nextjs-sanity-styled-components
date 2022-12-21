@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { ThreeCol, Left, Middle, Right } from "../styles/ThreeCol.styled";
-import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import content from "./data";
@@ -30,12 +29,12 @@ export default function DevDesignProcess() {
             </div>
           ))}
         </ThreeCol>
-        <div>
+        {/* <div>
           <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>
           <ContactBtn style={{ background: "coral" }}>
             <Link href="/contact">Lets go!</Link>
           </ContactBtn>
-        </div>
+        </div> */}
       </DevDesignsWrapper>
     </>
   );

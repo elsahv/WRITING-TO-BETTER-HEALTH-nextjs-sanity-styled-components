@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ThreeCol = styled.div`
-  background: pink;
+  // background: pink;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "left middle right";

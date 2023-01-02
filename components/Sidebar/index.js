@@ -9,8 +9,8 @@ const Sidebar = () => {
           <Link href="/">Writing to Better Health</Link>
         </Logo>
         <NavLinks>
-          <Link href="/web-development">Web Development</Link>
-          <Link href="/blog">Blog</Link>
+          {/* <Link href="/web-development">Web Development</Link>
+          <Link href="/blog">Blog</Link> */}
           <Link href="/contact">Contact</Link>
         </NavLinks>
       </SidebarWrapper>

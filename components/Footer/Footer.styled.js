@@ -4,7 +4,9 @@ export const FooterWrapper = styled.footer`
   color: #000;
   border-top: solid 1px #000;
   width: 100%;
-
+  a {
+    color: #000;
+  }
   @media only screen and (max-width: 600px) {
     border-top: solid 1px #000;
   }

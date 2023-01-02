@@ -24,18 +24,13 @@ function FooterSection() {
           <RightSide>
             <FooterlinksContainer>
               <ul style={{ listStyle: "none" }}>
-                <li
-                  style={{
-                    fontWeight: "bold",
-                    // textDecoration: "underline",
-                  }}
-                >
-                  Sitemap
-                </li>
+                {/*
+                  //TODO: Sitemap: add links when needed
+                   */}
                 {/* <li>Home</li> */}
-                <li>Web Development</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                {/* <li>Web Development</li>
+                <li>Blog</li> */}
+                <Link href="/contact">Contact</Link>
                 <li>Writing to Better Health | copyright @2022</li>
               </ul>
             </FooterlinksContainer>

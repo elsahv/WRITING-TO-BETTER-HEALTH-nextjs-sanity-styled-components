@@ -18,6 +18,7 @@ export default function Home() {
       <Hero />
       <Info />
       <About />
+      {/*  */}
       <CTA />
       <Services />
       <PkgRate />

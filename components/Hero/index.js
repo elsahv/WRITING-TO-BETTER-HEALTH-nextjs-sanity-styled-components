@@ -23,8 +23,8 @@ export default function Hero({
             <div>
               {content.map((item, index) => (
                 <div key={index} item={item}>
-                  <h2>{item.headline1}</h2>
-                  <Headline>{item.headline2}</Headline>
+                  <h1>{item.headline1}</h1>
+                  <h2>{item.headline2}</h2>
                   <p>{item.businessGoal}</p>
                   <ul>
                     <li>{item.listItem1}</li>

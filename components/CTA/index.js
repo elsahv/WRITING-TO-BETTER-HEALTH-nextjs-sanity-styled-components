@@ -4,7 +4,7 @@ import { ThreeCol, Left, Middle, Right } from "../styles/ThreeCol.styled";
 import { GrContact, GrPersonalComputer } from "react-icons/gr";
 import { MdOutlineContactSupport } from "react-icons/md";
 import content from "./data";
-import { Banner, DevDesignsWrapper, Title, IconWrapper } from "./CTA";
+import { Banner, DevDesignsWrapper, Title, IconWrapper } from "./CTA.styled";
 
 export default function DevDesignProcess() {
   return (
@@ -15,26 +15,13 @@ export default function DevDesignProcess() {
           {content.map((item, index) => (
             <div key={index} item={item}>
               <Title>{item.title}</Title>
-              <IconWrapper>
-                <GrContact />
-              </IconWrapper>
+              {/* 
+              //TODO: ADD ICON TO EACH SQ 
+              */}
               <p>{item.p1}</p>
-              {/* <IconWrapper>
-                  <GrPersonalComputer />
-                </IconWrapper>  */}
-              {/*              
-                <IconWrapper>
-                  <MdOutlineContactSupport />
-                </IconWrapper> */}
             </div>
           ))}
         </ThreeCol>
-        {/* <div>
-          <h2 style={{ fontSize: "40px" }}>Lets gets started</h2>
-          <ContactBtn style={{ background: "coral" }}>
-            <Link href="/contact">Lets go!</Link>
-          </ContactBtn>
-        </div> */}
       </DevDesignsWrapper>
     </>
   );

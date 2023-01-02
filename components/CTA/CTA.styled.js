@@ -13,16 +13,18 @@ export const Banner = styled.div`
 `;
 
 export const DevDesignsWrapper = styled.div`
+  // background: green;
   padding: 20px 100px;
   margin: 30px 0;
   @media only screen and (max-width: 1024px) {
-    padding: 0 10px;
+    padding: auto;
     p {
       font-size: 15px;
     }
   }
   @media only screen and (max-width: 600px) {
-    padding: 0 50px;
+    padding: 0 20px;
+    text-align: center;
   }
 `;
 
@@ -30,12 +32,6 @@ export const Title = styled.h4`
   font-size: 30px;
   @media only screen and (max-width: 1024px) {
     font-size: 20px;
-  }
-`;
-
-export const IconWrapper = styled.div`
-  font-size: 45px;
-  @media only screen and (max-width: 1024px) {
-    font-size: 40px;
+    padding-top: 20px;
   }
 `;

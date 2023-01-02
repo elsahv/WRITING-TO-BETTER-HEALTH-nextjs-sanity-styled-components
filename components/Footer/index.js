@@ -1,27 +1,24 @@
 import Link from "next/link";
 import { ContactBtn } from "../styles/buttons/ContactBtn.styled";
-import { Grid, LeftSide, RightSide } from "../styles/Grid.styled";
 import {
   FooterWrapper,
-  ContactCTAWrapper,
   ContactCTATitle,
-  ContactBtnWrapper,
   FooterlinksContainer,
+  Grid,
+  LeftSide,
+  RightSide,
 } from "./Footer.styled";
+
 function FooterSection() {
   return (
     <>
       <FooterWrapper>
         <Grid>
           <LeftSide>
-            <ContactCTAWrapper>
-              <ContactCTATitle>Lets gets started</ContactCTATitle>
-              <ContactBtnWrapper>
-                <ContactBtn>
-                  <Link href="/contact">Lets go!</Link>
-                </ContactBtn>
-              </ContactBtnWrapper>
-            </ContactCTAWrapper>
+            <ContactCTATitle>Lets gets started</ContactCTATitle>
+            <ContactBtn>
+              <Link href="/contact">Lets go!</Link>
+            </ContactBtn>
           </LeftSide>
 
           <RightSide>

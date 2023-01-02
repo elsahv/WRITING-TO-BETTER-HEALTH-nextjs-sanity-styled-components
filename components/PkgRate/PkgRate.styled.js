@@ -20,6 +20,11 @@ export const Title = styled.h2`
 
 export const ContentBody = styled.p`
   padding: 0px 70px 50px;
+  @media only screen and (max-width: 768px) {
+    padding-bottom 30px;
+    padding-left: 0;
+    padding-right:0;
+  }
 `;
 
 export const PkgRateWrapper = styled.div`

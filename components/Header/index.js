@@ -12,12 +12,12 @@ export default function Header() {
               Writing to Better Health
             </Link>
             {/* SUBMENU: SERVICES INCLUDE-#servicesInclude, PKG RATES-#pkgRates */}
-            <Link href="/web-development" className="nav-link">
-              Web Development
-            </Link>
-            <Link href="/blog" className="nav-link">
+            {/* <Link href="/web-development" className="nav-link">
+            Info
+            </Link> */}
+            {/* <Link href="/blog" className="nav-link">
               Blog
-            </Link>
+            </Link> */}
           </Navlinks>
 
           <ContactBtnWrapper>

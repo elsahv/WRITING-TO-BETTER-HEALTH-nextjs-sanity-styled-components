@@ -10,7 +10,7 @@ export const HeroContent = styled.div`
     padding-left: 10px;
   }
   @media only screen and (max-width: 1024px) {
-    padding: 80px 60px;
+    padding: 0px;
     height: 80%;
   }
   @media only screen and (max-width: 600px) {
@@ -25,7 +25,7 @@ export const Headline = styled.h4`
   }
  
     @media only screen and (max-width: 834px) {
-      font-size: 20px;
+      // font-size: 20px;
       }
 }
 `;

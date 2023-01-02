@@ -21,6 +21,14 @@ export const LeftSide = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
+
+  @media only screen and (max-width: 1024px) {
+    // padding: 30px;
+    justify-content: flex-start;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+  }
 `;
 export const RightSide = styled.div`
   grid-area: rightSide;

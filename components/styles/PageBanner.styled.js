@@ -4,11 +4,11 @@ export const Banner = styled.div`
   text-align: left;
   color: #000;
   padding: 100px 150px;
-  //   border-bottom: solid 1px #000;
-  //   background: coral;
-
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1024px) {
     padding: 30px 50px;
+  }
+  @media only screen and (max-width: 531px) {
+    padding: 20px;
   }
 `;
 

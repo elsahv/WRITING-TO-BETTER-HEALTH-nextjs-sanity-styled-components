@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  // background: green;
+  background: green;
   width: 100%;
-  height: 650px;
+  padding-bottom: 200px;
 `;
 
 export const AccordionSection = styled.div`
@@ -43,7 +43,7 @@ export const Wrap = styled.div`
   }
 `;
 
-export const ServiceTitle = styled.h2`
+export const ServiceTitle = styled.span`
   padding: 10px 20px;
   text-align: left;
   font-size: 22px;

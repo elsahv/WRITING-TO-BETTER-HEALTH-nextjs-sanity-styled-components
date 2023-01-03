@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  color: #000;
   border-top: solid 1px #000;
   width: 100%;
   a {

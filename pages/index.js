@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
 import Info from "../components/Info";
-import About from "../components/About";
 import CTA from "../components/CTA";
 import Services from "../components/Services";
 import PkgRate from "../components/PkgRate";
@@ -17,7 +16,6 @@ export default function Home() {
       </Head>
       <Hero />
       <Info />
-      <About />
       <CTA />
       <Services />
       <PkgRate />

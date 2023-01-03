@@ -10,7 +10,7 @@ export const ContactBtn = styled.button`
   // width: 280px;
   text-align: left;
   a {
-    text-shadow: 1px 1px 1px #000;
+    // text-shadow: 1px 1px 1px #000;
     text-decoration: none;
     color: #fff;
   }

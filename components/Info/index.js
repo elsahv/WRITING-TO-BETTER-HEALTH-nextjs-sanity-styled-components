@@ -1,8 +1,19 @@
 import content from "./data";
 import { ThreeCol } from "../styles/ThreeCol.styled";
-import { RiPlantLine } from "react-icons/ri";
-import { FcSmartphoneTablet, FcComboChart } from "react-icons/fc";
 import { CTA, Sq } from "./Info.styled";
+import Image from "next/image";
+import { Grid, LeftSide, RightSide } from "../styles/Grid.styled";
+import { ImgWrapper } from "../styles/images/SectionImages.styled";
+import img2 from "../../public/images/sketch2.jpg";
+import styled from "styled-components";
+
+export const Container = styled.div`
+  padding: 100px 50px 0;
+  // background-color: orange;
+  @media only screen and (max-width: 1024px) {
+    padding: 0;
+  }
+`;
 
 export default function ThreeColumnSection({ title, contentBody, icon }) {
   return (
@@ -32,6 +43,32 @@ export default function ThreeColumnSection({ title, contentBody, icon }) {
           </div>
         ))}
       </ThreeCol>
+
+      {/* BELOW */}
+      <Grid>
+        <LeftSide>
+          <Container>
+            <h2>So why choose Writing to Better Health?:</h2>
+            <p>
+              Your website is good hands with my experience in web hosting, web
+              design, and education and passion in nutrition.
+            </p>
+            <p>My name is Elsa, I build and maintain websites for a living.</p>
+
+            <p>So how does WTBH work? View process below.</p>
+          </Container>
+        </LeftSide>
+        <RightSide>
+          <ImgWrapper>
+            <Image
+              src={img2}
+              alt="about-me"
+              layout="responsive"
+              className="img"
+            />
+          </ImgWrapper>
+        </RightSide>
+      </Grid>
     </>
   );
 }

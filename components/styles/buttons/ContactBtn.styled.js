@@ -6,7 +6,7 @@ export const ContactBtn = styled.button`
   font-size: 17px;
   padding: 7px 12px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 10px;
   // width: 280px;
   text-align: left;
   a {
@@ -17,5 +17,8 @@ export const ContactBtn = styled.button`
 
   @media only screen and (max-width: 834px) {
     font-size: 15px;
+  }
+  @media only screen and (max-width: 531px) {
+    display: none;
   }
 `;

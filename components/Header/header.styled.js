@@ -11,6 +11,10 @@ export const ContactBtnWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   .nav-menu {
     background: teal;
     border: solid 2px #000;
@@ -31,14 +35,14 @@ export const Wrapper = styled.div`
     // background: red;
   }
 `;
-export const Logo = styled.div`
+export const Logo = styled.h1`
   position: absolute;
   left: 0;
   // background: orange;
   font-size: 30px;
   padding: 0 10px;
   a {
-    color: #000;
+    color: gray;
     text-decoration: none;
   }
   @media only screen and (max-width: 531px) {
@@ -47,8 +51,8 @@ export const Logo = styled.div`
 `;
 
 export const Header = styled.header`
-  // background-color: teal;
-  border-bottom: 1px solid gray;
+  background: #fff;
+  border-bottom: 2px solid gray;
   padding: 0 20px;
   height: 80px;
   display: flex;

@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   color: #000;
+  // height: 100vh;
 `;
 
 export const Form = styled.form`

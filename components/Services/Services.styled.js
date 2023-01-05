@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServicesGrid = styled.div`
   // background: orange;
-  // height: 700px;
+  margin: 150px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "leftSide rightSide";

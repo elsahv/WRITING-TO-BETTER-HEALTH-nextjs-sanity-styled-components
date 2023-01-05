@@ -15,11 +15,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <Info />
-      <CTA />
-      <Services />
-      <PkgRate />
-      <PageOptions />
+      <section style={{ paddingTop: "150px" }} id="about">
+        <Info />
+        <CTA />
+      </section>
+
+      <section style={{ paddingTop: "10px" }} id="services">
+        <Services />
+      </section>
+
+      <section style={{ paddingTop: "100px" }} id="packages">
+        <PkgRate />
+        <PageOptions />
+      </section>
     </div>
   );
 }

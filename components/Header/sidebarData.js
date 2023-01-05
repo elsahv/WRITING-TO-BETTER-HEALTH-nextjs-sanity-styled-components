@@ -5,18 +5,18 @@ export const SidebarData = [
   },
   {
     title: "About",
-    path: "/",
+    path: "/#about",
   },
   {
     title: "Services",
-    path: "/",
+    path: "/#services",
   },
   {
     title: "Packages",
-    path: "/",
+    path: "/#packages",
   },
   {
     title: "Contact",
-    path: "/",
+    path: "/contact",
   },
 ];

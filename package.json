@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@portabletext/react": "^1.0.6",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/cli": "^2.27.0",
@@ -17,12 +18,15 @@
     "@sanity/portable-text-editor": "^2.29.8",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
+    "formik": "^2.2.9",
+    "framer-motion": "^8.1.5",
     "next": "13.0.5",
+    "next-sanity": "^0.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "next-sanity": "^0.5.2",
     "react-portable-text": "^0.4.3",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "yup": "^0.32.11"
   }
 }

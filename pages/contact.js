@@ -6,12 +6,21 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   height: 100vh;
+  @media only screen and (max-width: 531px) {
+    height: 100%;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "left right";
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "right";
+  }
 `;
 
 const ContactFormWrapper = styled.div`
@@ -21,6 +30,9 @@ const ContactFormWrapper = styled.div`
 const Content = styled.div`
   grid-area: left;
   padding: 100px 55px 0;
+  @media only screen and (max-width: 531px) {
+    padding: 10px;
+  }
 `;
 const contact = () => {
   return (

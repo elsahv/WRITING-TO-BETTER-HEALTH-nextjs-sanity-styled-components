@@ -4,11 +4,11 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   color: #000;
-  // height: 100vh;
+  background: orange;
 `;
 
 export const Form = styled.form`
-  padding: 50px;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -45,7 +45,10 @@ export const Label = styled.label`
 export const Input = styled.input`
   height: 40px;
   border-radius: 5px;
-  width: 400px;
+  width: 500px;
+  @media only screen and (max-width: 531px) {
+    width: 300px;
+  }
 `;
 export const Textarea = styled.textarea`
   height: 150px;

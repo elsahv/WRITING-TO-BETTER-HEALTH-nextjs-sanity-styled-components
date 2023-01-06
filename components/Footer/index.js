@@ -8,6 +8,7 @@ import {
   LeftSide,
   RightSide,
 } from "./Footer.styled";
+const today = new Date();
 
 function FooterSection() {
   return (
@@ -31,7 +32,10 @@ function FooterSection() {
                 {/* <li>Web Development</li>
                 <li>Blog</li> */}
                 <Link href="/contact">Contact</Link>
-                <li>Writing to Better Health | copyright @2022</li>
+                <li>
+                  Writing to Better Health | Copyright &copy;{" "}
+                  {today.getFullYear()}
+                </li>
               </ul>
             </FooterlinksContainer>
           </RightSide>

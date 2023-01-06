@@ -70,4 +70,16 @@ export const ContactCTATitle = styled.h2`
 export const FooterlinksContainer = styled.div`
   // background: pink;
   // border-left: solid 1px #000;
+  ul {
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    transition: 1s;
+  }
 `;

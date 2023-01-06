@@ -24,19 +24,31 @@ function FooterSection() {
 
           <RightSide>
             <FooterlinksContainer>
-              <ul style={{ listStyle: "none" }}>
-                {/*
-                  //TODO: Sitemap: add links when needed
-                   */}
-                {/* <li>Home</li> */}
-                {/* <li>Web Development</li>
-                <li>Blog</li> */}
-                <Link href="/contact">Contact</Link>
+              <ul>
+                <li
+                  style={{
+                    textDecoration: "underline",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                  }}
+                >
+                  Sitemap
+                </li>
                 <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
+                {/* <li>
                   Writing to Better Health | Copyright &copy;{" "}
                   {today.getFullYear()}
-                </li>
+                </li> */}
               </ul>
+              <p>
+                Writing to Better Health | Copyright &copy;{" "}
+                {today.getFullYear()}
+              </p>
             </FooterlinksContainer>
           </RightSide>
         </Grid>
